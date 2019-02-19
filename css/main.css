@@ -123,6 +123,11 @@ Purple gradient: 8A8BE5 to BFBFFE
   width
 }
 
+.column {
+  display: flex;
+  flex: 50%;
+}
+
 header {
   position: fixed;
   border-bottom: 4px solid #ACADFE;
