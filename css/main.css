@@ -12,10 +12,12 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-   html {
-    color: #222;
+html
+{
     font-size: 1em;
     line-height: 1.4;
+
+    color: #222;
 }
 
 /*
@@ -28,7 +30,8 @@
  * Customize the background color to match your design.
  */
 
-::selection {
+::selection
+{
     background: #b3d4fc;
     text-shadow: none;
 }
@@ -37,13 +40,16 @@
  * A better looking default horizontal rule
  */
 
-hr {
+hr
+{
     display: block;
+
     height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
+
+    border: 0;
+    border-top: 1px solid #ccc;
 }
 
 /*
@@ -57,7 +63,8 @@ canvas,
 iframe,
 img,
 svg,
-video {
+video
+{
     vertical-align: middle;
 }
 
@@ -65,17 +72,20 @@ video {
  * Remove default fieldset styles.
  */
 
-fieldset {
-    border: 0;
+fieldset
+{
     margin: 0;
     padding: 0;
+
+    border: 0;
 }
 
 /*
  * Allow only vertical resizing of textareas.
  */
 
-textarea {
+textarea
+{
     resize: vertical;
 }
 
@@ -83,17 +93,19 @@ textarea {
    Browser Upgrade Prompt
    ========================================================================== */
 
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
+.browserupgrade
+{
+    margin: .2em 0;
+    padding: .2em 0;
+
     color: #000;
-    padding: 0.2em 0;
+    background: #ccc;
 }
 
 
 
 
- /* ==========================================================================
+/* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
@@ -105,46 +117,57 @@ Purple gradient: 8A8BE5 to BFBFFE
 
 */
 
-.full-width {
-  width: 100%;
+.full-width
+{
+    width: 100%;
 }
 
-.purple-background {
-  background-color: #A78DC8;
-  color: white;
+.purple-background
+{
+    color: white;
+    background-color: #a78dc8;
 }
 
-.width-wrapper {
-  width: 95%;
-  /* max-width: 1000px; */
+.width-wrapper
+{
+    width: 95%;
+    /* max-width: 1000px; */
 }
 
-.width-full {
-  width
+.width-full
+{
+    width: 100%;
 }
 
-header {
-  position: fixed;
-  border-bottom: 4px solid #ACADFE;
+header
+{
+    position: fixed;
+
+    border-bottom: 4px solid #acadfe;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: auto;
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: auto;
 }
 
-header div {
-padding: 0px 10px;
+header div
+{
+    padding: 0 10px;
 }
 
-h1 {
-  font-weight: bold;
+h1
+{
+    font-weight: bold;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
+body
+{
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -159,7 +182,7 @@ body {
 
 
 
- /* ==========================================================================
+/* ==========================================================================
    Helper classes
    ========================================================================== */
 
@@ -167,8 +190,9 @@ body {
  * Hide visually and from screen readers
  */
 
- .hidden {
-  display: none !important;
+.hidden
+{
+    display: none !important;
 }
 
 /*
@@ -180,16 +204,21 @@ body {
 *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
 */
 
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  white-space: nowrap; /* 1 */
+.visuallyhidden
+{
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    white-space: nowrap; /* 1 */
+
+    border: 0;
 }
 
 /*
@@ -199,22 +228,27 @@ body {
 */
 
 .visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-  white-space: inherit;
+.visuallyhidden.focusable:focus
+{
+    position: static;
+
+    overflow: visible;
+    clip: auto;
+
+    width: auto;
+    height: auto;
+    margin: 0;
+
+    white-space: inherit;
 }
 
 /*
 * Hide visually and from screen readers, but maintain layout
 */
 
-.invisible {
-  visibility: hidden;
+.invisible
+{
+    visibility: hidden;
 }
 
 /*
@@ -230,13 +264,16 @@ body {
 */
 
 .clearfix:before,
-.clearfix:after {
-  content: " "; /* 1 */
-  display: table; /* 2 */
+.clearfix:after
+{
+    display: table; /* 2 */
+
+    content: ' '; /* 1 */
 }
 
-.clearfix:after {
-  clear: both;
+.clearfix:after
+{
+    clear: both;
 }
 
 
@@ -246,14 +283,16 @@ body {
    Modify as content requires.
    ========================================================================== */
 
-   @media only screen and (min-width: 35em) {
+@media only screen and (min-width: 35em)
+{
     /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+       (min-resolution: 120dpi)
+{
     /* Style adjustments for high resolution devices */
 }
 
@@ -264,28 +303,33 @@ body {
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-   @media print {
+@media print
+{
     *,
     *:before,
-    *:after {
-        background: transparent !important;
+    *:after
+    {
         color: #000 !important; /* Black prints faster */
+        background: transparent !important;
         -webkit-box-shadow: none !important;
-        box-shadow: none !important;
+                box-shadow: none !important;
         text-shadow: none !important;
     }
 
     a,
-    a:visited {
+    a:visited
+    {
         text-decoration: underline;
     }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
+    a[href]:after
+    {
+        content: ' (' attr(href) ')';
     }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
+    abbr[title]:after
+    {
+        content: ' (' attr(title) ')';
     }
 
     /*
@@ -293,17 +337,21 @@ body {
      * or use the `javascript:` pseudo protocol
      */
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
+    a[href^='#']:after,
+    a[href^='javascript:']:after
+    {
+        content: '';
     }
 
-    pre {
+    pre
+    {
         white-space: pre-wrap !important;
     }
     pre,
-    blockquote {
+    blockquote
+    {
         border: 1px solid #999;
+
         page-break-inside: avoid;
     }
 
@@ -312,24 +360,28 @@ body {
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
 
-    thead {
+    thead
+    {
         display: table-header-group;
     }
 
     tr,
-    img {
+    img
+    {
         page-break-inside: avoid;
     }
 
     p,
     h2,
-    h3 {
+    h3
+    {
         orphans: 3;
         widows: 3;
     }
 
     h2,
-    h3 {
+    h3
+    {
         page-break-after: avoid;
     }
 }
