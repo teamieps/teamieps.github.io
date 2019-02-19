@@ -141,6 +141,16 @@ Purple gradient: 8A8BE5 to BFBFFE
     background: linear-gradient(0deg, rgba(138,139,229,1) 0%, rgba(191,191,254,1) 100%);
 }
 
+
+.column {
+  display: flex;
+  flex: 50%;
+}
+
+header {
+  position: fixed;
+  border-bottom: 4px solid #ACADFE;
+}
 .white-background
 {
     color: #acadfe;
