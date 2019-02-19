@@ -100,16 +100,30 @@ textarea {
 
 .full-width {
   width: 100%;
-  min-height: 100px;
+  /* min-height: 100px; */
 }
 
 .purple-background {
-  background-color: purple;
+  background-color: #A78DC8;
   color: white;
+}
+
+.width-wrapper {
+  width: 95%;
+  max-width: 800px;
 }
 
 header {
   position: fixed;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+header div {
+padding: 0px 10px;
 }
 
 h1 {
