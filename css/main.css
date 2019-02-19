@@ -193,6 +193,15 @@ header
     font-size: 20px;
 }
 
+.shadow
+{
+    z-index: 0;
+    /* filter: drop-shadow(30px 10px 4px); */
+    /* filter: drop-shadow(10px 20px 5px black); */
+
+    box-shadow: 12px 12px 30px 1px rgba(0, 0, 255, .2);
+}
+
 nav
 {
     display: flex;
