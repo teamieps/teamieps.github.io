@@ -16,7 +16,7 @@
 
     <meta name="theme-color" content="#fafafa">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   </head>
 
   <body>
@@ -24,20 +24,31 @@
 
     <!-- Add your site or application content here -->
 
-    <header class="full-width purple-background">
-      <nav class="width-wrapper">
+    <header class="full-width white-background">
+      <nav class="width-wrapper white-background">
         <div>
           <h1>Team IEPs</h1>
         </div>
         <div>
-          <h2>
+          <h2 class="button purple-background">
             About
           </h2>
         </div>
       </nav>
     </header>
+    <div id="header-spacer"></div>
 
-    <div class="full-width"></div>
+    <div class="full-width purple-background purple-gradient-background" id="hero">
+      <img id="hero-image" src="./img/header-graphics.png">
+      <div class="width-wrapper-tight">
+        <h1>
+          Get Connected!
+        </h1>
+        <p>
+          Find special education resources near you!
+        </p>
+      </div>
+    </div>
 
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -59,8 +70,7 @@
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async="async" defer="defer"></script>
 
-    <footer class="full-width purple-background">
-    </footer>
+    <footer class="full-width purple-background"></footer>
   </body>
 
 </html>
