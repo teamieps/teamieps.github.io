@@ -97,10 +97,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*
+Dark purple: #ACADFE
+Light Purple:
+
+Purple gradient: 8A8BE5 to BFBFFE
+
+*/
 
 .full-width {
   width: 100%;
-  /* min-height: 100px; */
 }
 
 .purple-background {
@@ -110,16 +116,23 @@ textarea {
 
 .width-wrapper {
   width: 95%;
-  max-width: 800px;
+  /* max-width: 1000px; */
+}
+
+.width-full {
+  width
 }
 
 header {
   position: fixed;
+  border-bottom: 4px solid #ACADFE;
 }
 
 nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin: auto;
 }
 
 header div {
