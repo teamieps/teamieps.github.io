@@ -257,6 +257,9 @@ header
 {
     font-size: 40px;
 
+    position: relative;
+    z-index: 50;
+
     margin-right: -30px;
     padding-right: 50px;
     padding-left: 20px;
@@ -264,6 +267,25 @@ header
     text-transform: capitalize;
 
     border-radius: 40px;
+}
+
+#find-resources-title h3::before
+{
+    position: absolute;
+    z-index: -10;
+
+    display: block;
+    float: left;
+
+    width: 100%;
+    height: 80%;
+    margin-left: -70px;
+
+    content: '';
+
+    background-image: url(./../img/find-resources-background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 
