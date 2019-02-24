@@ -142,14 +142,17 @@ Purple gradient: 8A8BE5 to BFBFFE
 }
 
 
-.column {
-  display: flex;
-  flex: 50%;
+.column
+{
+    display: flex;
+    flex: 50%;
 }
 
-header {
-  position: fixed;
-  border-bottom: 4px solid #ACADFE;
+header
+{
+    position: fixed;
+
+    border-bottom: 4px solid #acadfe;
 }
 .white-background
 {
@@ -190,10 +193,13 @@ header
 #hero-image
 {
     max-height: 300px;
+    margin: auto;
 }
 
 #hero
 {
+    z-index: 0;
+
     padding-top: 150px;
     padding-bottom: 20px;
 }
@@ -202,6 +208,31 @@ header
 {
     font-size: 20px;
 }
+
+#description
+{
+    z-index: -1;
+}
+
+.robot-img
+{
+    width: 100px;
+    height: 100px;
+}
+
+.general-spacing
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.flex
+{
+    display: flex;
+    align-items: center;
+}
+
+
 
 .shadow
 {
