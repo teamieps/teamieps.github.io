@@ -141,6 +141,11 @@ Purple gradient: 8A8BE5 to BFBFFE
     background: linear-gradient(0deg, rgba(138,139,229,1) 0%, rgba(191,191,254,1) 100%);
 }
 
+.purple-text
+{
+    color: red;
+}
+
 
 .column
 {
@@ -288,12 +293,20 @@ header
     background-size: contain;
 }
 
+.step-title-container
+{
+    border-bottom: 2px solid purple;
+}
+
 .step-title-container h4
 {
     font-size: 40px;
+    font-weight: 500;
 }
 .step-number
 {
+    font-weight: 500;
+
     padding-right: 30px;
     padding-left: 10px;
 
@@ -305,6 +318,10 @@ header
     -webkit-border-bottom-right-radius: 40px;
     -moz-border-radius-bottomright: 40px;
             border-bottom-right-radius: 40px;
+}
+.step-title
+{
+    border-bottom: 3px solid #acadfe;
 }
 
 
