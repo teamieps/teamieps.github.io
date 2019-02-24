@@ -165,6 +165,11 @@ header
     background-color: white;
 }
 
+.purple-text
+{
+    color: #acadfe;
+}
+
 #hero h1
 {
     font-size: 52px;
@@ -191,9 +196,12 @@ header
 header
 {
     position: fixed;
+    z-index: 10000;
 
     border-bottom: 4px solid #acadfe;
 }
+
+
 
 #hero-image
 {
@@ -293,11 +301,6 @@ header
     background-size: contain;
 }
 
-.step-title-container
-{
-    border-bottom: 2px solid purple;
-}
-
 .step-title-container h4
 {
     font-size: 40px;
@@ -312,6 +315,7 @@ header
 
     text-transform: uppercase;
 
+    border: 1.5px solid #acadfe;
     -webkit-border-top-right-radius: 40px;
     -moz-border-radius-topright: 40px;
             border-top-right-radius: 40px;
@@ -321,6 +325,9 @@ header
 }
 .step-title
 {
+    margin-left: -30px;
+    padding-left: 40px;
+
     border-bottom: 3px solid #acadfe;
 }
 
@@ -369,7 +376,12 @@ body
 }
 
 
-
+#usa-map
+{
+    width: 600px;
+    height: 400px;
+    margin: auto;
+}
 
 
 

@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <meta name="theme-color" content="#fafafa">
+    <meta name="theme-color" content="#acadfe">
 
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
-    <link href="../dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="css/jqvmap.min.css" media="screen" rel="stylesheet" type="text/css"/>
 
   </head>
 
@@ -71,40 +71,17 @@
       </div>
     </div>
 
-    <div class="flex step-title-container">
-      <h4 class="step-number purple-background">Step One</h4>
-      <h4 class="step-title">Where are you?</h4>
+    <div class="full-width">
+      <div class="flex step-title-container">
+        <h4 class="step-number purple-background">Step One</h4>
+        <h4 class="step-title purple-text">Where are you?</h4>
+      </div>
+      <p style="align: center;">
+        Select your location from the map below or the drop-down menu. We'll show you resources near you.
+      </p>
     </div>
 
-    <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script>
-      window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
-    </script>
-    <script type="text/javascript" src="./js/vendor/jquery.vmap.min.js"></script>
-    <script type="text/javascript" src="./js/vendor/jquery.vmap.usa.js" charset="utf-8"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
- <script>
-      jQuery(document).ready(function () {
-        jQuery('#vmap').vectorMap({
-          map: 'usa_en',
-          backgroundColor: '#f3f6f6',
-          borderColor: '#f3f6f6',
-          color: '#dfe1e0',
-          borderWidth: 10,
-          enableZoom: true,
-          showTooltip: true,
-          selectedColor: null,
-          hoverColor: null,
-          onRegionClick: function(event, code, region){
-            event.preventDefault();
-          }
-        });
-      });
-    </script>
-   <div id="vmap" style="width: 600px; height: 400px;"></div>
+    <div id="usa-map"></div>
 
     <footer class="full-width purple-background">
       <div style="display: flex;">
@@ -123,6 +100,18 @@
         </script>
       </p>
     </footer>
+
+    <!-- Below this line is javascript content. Don't put any visual elements below this line. -->
+
+    <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+      window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+    </script>
+    <script type="text/javascript" src="./js/vendor/jquery.vmap.min.js"></script>
+    <script type="text/javascript" src="./js/vendor/jquery.vmap.usa.js" charset="utf-8"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
