@@ -288,6 +288,24 @@ header
     background-size: contain;
 }
 
+.step-title-container h4
+{
+    font-size: 40px;
+}
+.step-number
+{
+    padding-right: 30px;
+    padding-left: 10px;
+
+    text-transform: uppercase;
+
+    -webkit-border-top-right-radius: 40px;
+    -moz-border-radius-topright: 40px;
+            border-top-right-radius: 40px;
+    -webkit-border-bottom-right-radius: 40px;
+    -moz-border-radius-bottomright: 40px;
+            border-bottom-right-radius: 40px;
+}
 
 
 .shadow
