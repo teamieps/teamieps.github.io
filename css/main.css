@@ -117,6 +117,21 @@ Purple gradient: 8A8BE5 to BFBFFE
 
 */
 
+h1,
+h2,
+h3,
+h4,
+h5
+{
+    font-family: Avenir, 'Nunito', sans-serif;
+    font-weight: bolder;
+}
+
+body
+{
+    font-family: Geneva, 'Roboto', sans-serif;
+}
+
 .button
 {
     padding: 5px 20px;
@@ -201,8 +216,6 @@ header
     border-bottom: 4px solid #acadfe;
 }
 
-
-
 #hero-image
 {
     max-height: 300px;
@@ -263,8 +276,6 @@ header
 {
     flex-direction: row-reverse;
 }
-
-
 
 #find-resources-title h3
 {
@@ -328,9 +339,10 @@ header
     margin-left: -30px;
     padding-left: 40px;
 
+    text-transform: capitalize;
+
     border-bottom: 3px solid #acadfe;
 }
-
 
 .shadow
 {
@@ -360,25 +372,10 @@ h1
     font-weight: bold;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5
-{
-    font-family: Avenir, 'Nunito', sans-serif;
-    font-weight: bolder;
-}
-
-body
-{
-    font-family: Geneva, 'Roboto', sans-serif;
-}
-
-
 #usa-map
 {
     width: 600px;
+    max-width: 90%;
     height: 400px;
     margin: auto;
 }

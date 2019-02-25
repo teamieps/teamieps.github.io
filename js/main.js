@@ -13,4 +13,8 @@ jQuery(document).ready(function () {
       console.log(event, code, region)
     }
   })
+
+  jQuery.get('../database.json', function (data) {
+    console.log(data)
+  })
 })
