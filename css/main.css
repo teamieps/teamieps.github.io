@@ -196,7 +196,6 @@ header
 .width-wrapper-tight
 {
     width: 95%;
-    max-width: 1200px;
     margin: auto;
 }
 
@@ -226,6 +225,7 @@ header
 
 #hero
 {
+    position:relative;
     z-index: 0;
 
     padding-top: 150px;
@@ -239,7 +239,9 @@ header
 
 #description
 {
+    padding-top: 150px;
     z-index: -1;
+    padding-top: 50px;
 }
 
 .robot-img
@@ -285,13 +287,30 @@ header
     display: block;
     float: left;
 
-    width: 100%;
-    height: 80%;
-    margin-left: -70px;
+    width: 110px;
+    height: 110px;
+    margin-left: 10%;
 
     content: '';
 
     background-image: url(./../img/purple-tri.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#description::after {
+    position: absolute;
+    z-index: -10;
+
+    display: block;
+    float: left;
+
+    width: 110px;
+    height: 110px;
+    margin-left: 75%;
+
+    content: '';
+
+    background-image: url(./../img/white-tri.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
