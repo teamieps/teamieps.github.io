@@ -14,7 +14,5 @@ jQuery(document).ready(function () {
     }
   })
 
-  jQuery.get('../database.json', function (data) {
-    console.log(data)
-  })
+  console.log(database)
 })
