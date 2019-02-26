@@ -397,6 +397,18 @@ h1
     width: 50%;
 }
 
+hr
+{
+    /* background-color: red; */
+    /* border: 2px solid orange; */
+    /* color: green; */
+    /* border-color: orange; */
+    height: 2px;
+
+    border: 0;
+    background: rgba(172, 173, 254, .4);
+}
+
 
 
 
