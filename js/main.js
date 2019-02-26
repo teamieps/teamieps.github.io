@@ -26,7 +26,7 @@ let setUpUSAMap = function () {
   })
 }
 
-const resourceItemHTML = '<div class="resource-item"><h4></h4><p class="resource-description"></p></div>'
+const resourceItemHTML = '<div class="resource-item"><a target="_blank"><h4></h4></a><p class="resource-description"></p></div>'
 
 const displayResources = function (stateCode) {
   const selectedStateCode = stateCode.toUpperCase(stateCode)
@@ -40,6 +40,7 @@ const displayResources = function (stateCode) {
 
   for (let resource of filteredResources) {
     let resourceNode = jQuery(resourceItemHTML)
+    resourceNode.find('a').attr('href', resource['Website'])
     resourceNode.find('h4').text(resource['Organization Name'])
     resourceNode.find('.resource-description').text(resource['Brief Description'])
 
