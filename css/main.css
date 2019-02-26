@@ -188,6 +188,7 @@ header
 #hero h1
 {
     font-size: 52px;
+    position: ;
 }
 
 .width-wrapper,
@@ -276,7 +277,23 @@ header
 {
     flex-direction: row-reverse;
 }
+#hero::after {
+    position: absolute;
+    z-index: -10;
 
+    display: block;
+    float: left;
+
+    width: 100%;
+    height: 80%;
+    margin-left: -70px;
+
+    content: '';
+
+    background-image: url(./../img/purple-tri.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 #find-resources-title h3
 {
     font-size: 40px;
