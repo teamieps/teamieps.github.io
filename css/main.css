@@ -18,6 +18,7 @@ html
     line-height: 1.4;
 
     color: #222;
+    background-color: #f4f6f6;
 }
 
 /*
@@ -397,7 +398,33 @@ h1
     margin: auto;
 }
 
+.results-box
+{
+    padding: 10px;
+}
 
+#resources-list
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.resource-item
+{
+    width: 50%;
+}
+
+hr
+{
+    /* background-color: red; */
+    /* border: 2px solid orange; */
+    /* color: green; */
+    /* border-color: orange; */
+    height: 2px;
+
+    border: 0;
+    background: rgba(172, 173, 254, .4);
+}
 
 
 
