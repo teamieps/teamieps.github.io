@@ -189,7 +189,6 @@ header
 #hero h1
 {
     font-size: 52px;
-    position: ;
 }
 
 .width-wrapper,
@@ -280,7 +279,8 @@ header
 {
     flex-direction: row-reverse;
 }
-#hero::after {
+#hero::after
+{
     position: absolute;
     z-index: -10;
 
@@ -419,26 +419,23 @@ h1
 
 .results-box
 {
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 #resources-list
 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .resource-item
 {
-    width: 50%;
+    width: 49%;
 }
 
 hr
 {
-    /* background-color: red; */
-    /* border: 2px solid orange; */
-    /* color: green; */
-    /* border-color: orange; */
     height: 2px;
 
     border: 0;
