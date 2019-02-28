@@ -224,7 +224,7 @@ header
 
 #hero
 {
-    position:relative;
+    position: relative;
     z-index: 0;
 
     padding-top: 150px;
@@ -238,8 +238,9 @@ header
 
 #description
 {
-    padding-top: 150px;
     z-index: -1;
+
+    padding-top: 150px;
     padding-top: 50px;
 }
 
@@ -297,7 +298,8 @@ header
     background-repeat: no-repeat;
     background-size: contain;
 }
-#description::after {
+#description::after
+{
     position: absolute;
     z-index: -10;
 
