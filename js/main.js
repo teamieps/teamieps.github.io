@@ -1,11 +1,35 @@
 let jQuery = window.jQuery
 
+const resourcesDatabases = resourcesDatabase
+
 jQuery(document).ready(function () {
+  // findUniqueStates()
   setUpUSAMap()
-  console.log(database)
 })
 
+let findFesourcesPerState = function () {
+  const resourcesPerState = resourcesDatabase.reduce(function (accumulator, currentValue) {
+    if (currentValue.State) {
+      if (accumulator[currentValue.State.toLowerCase()]) {
+        accumulator[currentValue.State.toLowerCase()]++
+      } else {
+        accumulator[currentValue.State.toLowerCase()] = 1
+      }
+    }
+    return accumulator
+  }, {})
+  return resourcesPerState
+}
+
 let setUpUSAMap = function () {
+  const statesWithResources = Object.keys(findFesourcesPerState())
+  console.log(statesWithResources)
+
+  let stateColors = {}
+  for (let stateCode of statesWithResources) {
+    stateColors[stateCode] = '#dcd6ff'
+  }
+
   jQuery('#usa-map').vectorMap({
     map: 'usa_en',
     backgroundColor: 'rgba(0, 0, 0, 0)',
@@ -13,6 +37,7 @@ let setUpUSAMap = function () {
     borderColor: '#F4F6F6',
     borderOpacity: 1,
     color: '#dfe1e0',
+    colors: stateColors,
     borderWidth: 2,
     enableZoom: false,
     // showLabels: true,
@@ -30,10 +55,10 @@ const resourceItemHTML = '<div class="resource-item"><a target="_blank"><h4></h4
 
 const displayResources = function (stateCode) {
   const selectedStateCode = stateCode.toUpperCase(stateCode)
-  const selectedStateName = states[selectedStateCode]
+  const selectedStateName = statesDatabase[selectedStateCode]
   jQuery('#state-name').text(selectedStateName)
 
-  const filteredResources = database.filter(entry => entry.State === selectedStateCode)
+  const filteredResources = resourcesDatabase.filter(entry => entry.State === selectedStateCode)
 
   // Delete existing elements
   jQuery('#resources-list').empty()
