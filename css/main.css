@@ -233,6 +233,7 @@ header
 {
     z-index: 10;
 
+    box-sizing: border-box;
     padding-top: 150px;
     padding-bottom: 20px;
 }
@@ -293,31 +294,39 @@ header
 {
     position: absolute;
     z-index: -10;
+    bottom: -80px;
 
     display: block;
     float: left;
 
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 80px;
 
     content: '';
 
     background-repeat: no-repeat;
+    background-position: center;
     background-size: contain;
 }
 
-#hero::after
+.triangle-after-purple::after
 {
-    margin-left: 10%;
-
-    background-image: url(./../img/purple-tri.png);
-    background-image: url(./../img/triangle.svg);
+    background-image: url(./../img/triangle-purple.svg);
 }
-#description::after
-{
-    margin-left: 75%;
 
-    background-image: url(./../img/white-tri.png);
+.triangle-after-left::after
+{
+    left: 10%;
+}
+
+.triangle-after-white::after
+{
+    background-image: url(./../img/triangle-white.svg);
+}
+
+.triangle-after-right::after
+{
+    right: 10%;
 }
 
 #search-header
