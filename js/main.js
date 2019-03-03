@@ -5,6 +5,7 @@ const resourcesDatabases = resourcesDatabase
 jQuery(document).ready(function () {
   // findUniqueStates()
   setUpUSAMap()
+  populateStateSelectionDropdown()
 })
 
 let findFesourcesPerState = function () {
@@ -19,6 +20,38 @@ let findFesourcesPerState = function () {
     return accumulator
   }, {})
   return resourcesPerState
+}
+
+let populateStateSelectionDropdown = function () {
+  const statesCodesWithResources = Object.keys(findFesourcesPerState())
+  let selectElement = document.getElementById('stateSelectionDropdown')
+
+  const statesWithResources = statesCodesWithResources.map(function (stateCode) {
+    return {
+      stateCode: stateCode.toLowerCase(),
+      stateName: statesDatabase[stateCode.toUpperCase()]
+    }
+  })
+
+  // sort states by name
+  statesWithResources.sort(function (a, b) {
+    var nameA = a.stateName.toUpperCase() // ignore upper and lowercase
+    var nameB = b.stateName.toUpperCase() // ignore upper and lowercase
+    if (nameA < nameB) {
+      return -1
+    }
+    if (nameA > nameB) {
+      return 1
+    }
+    return 0
+  })
+
+  for (let state of statesWithResources) {
+    let newOption = document.createElement('option')
+    newOption.value = state.stateCode
+    newOption.label = state.stateName
+    selectElement.appendChild(newOption)
+  }
 }
 
 let setUpUSAMap = function () {
@@ -44,12 +77,31 @@ let setUpUSAMap = function () {
     showTooltip: true,
     selectedColor: '#acadfe',
     hoverColor: '#acadfe',
+    onRegionClick: ignoreUnsupportedStates,
     onRegionSelect: function (event, code, region) {
+      if (jQuery('#stateSelectionDropdown').val() !== code) {
+        jQuery('#stateSelectionDropdown').val(code)
+      }
       displayResources(code)
+    },
+    onRegionOver: ignoreUnsupportedStates,
+    onLabelShow: function (event, label, code) {
+      return ignoreUnsupportedStates(event, code)
     }
-
   })
 }
+
+const statesWithResources = Object.keys(findFesourcesPerState())
+const ignoreUnsupportedStates = function (event, code, region) {
+  if (!statesWithResources.includes(code)) {
+    event.preventDefault()
+  }
+}
+
+jQuery('#stateSelectionDropdown').change(function (event) {
+  const selectedState = jQuery('#stateSelectionDropdown').val()
+  jQuery('#jqvmap1_' + selectedState).click()
+})
 
 const resourceItemHTML = '<div class="resource-item"><a target="_blank"><h4></h4></a><p class="resource-description"></p></div>'
 

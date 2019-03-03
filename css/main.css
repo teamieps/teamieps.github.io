@@ -454,7 +454,12 @@ hr
     background: rgba(172, 173, 254, .4);
 }
 
+#stateSelectionDropdown
+{
+    display: block;
 
+    margin: auto;
+}
 
 
 
