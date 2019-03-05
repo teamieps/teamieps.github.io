@@ -50,6 +50,7 @@ let populateStateSelectionDropdown = function () {
     let newOption = document.createElement('option')
     newOption.value = state.stateCode
     newOption.label = state.stateName
+    newOption.innerHTML = state.stateName
     selectElement.appendChild(newOption)
   }
 }
