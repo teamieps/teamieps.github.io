@@ -40,7 +40,7 @@
     <div id="header-spacer"></div>
 
     <div class="full-width purple-background purple-gradient-background shadow triangle-after triangle-after-purple triangle-after-left position-relative" id="hero">
-      <img id="hero-image" src="./img/header-graphics.png" alt="A drawing showing humanoid creatures expressing questions, completing a checklist, and creating an individual education plan.">
+      <img id="hero-image" class="margin-right" src="./img/header-graphics.png" alt="Humanoid creatures expressing questions, completing a checklist, and creating an individual education plan.">
       <div class="width-wrapper-tight">
         <h1>
           Get Connected!
@@ -53,10 +53,12 @@
 
     <div class="full-width white-background white-grey-gradient-background shadow triangle-after triangle-after-white triangle-after-right position-relative" id="description">
       <div class="flex mobile-no-flex width-wrapper-tight general-spacing">
-        <img src="./img/robot.png" class="robot-img" alt="A drawing of a humanoid creature's face">
+        <img src="./img/robot.png" class="robot-img margin-right" alt="A drawing of a humanoid creature's face">
         <div>
-          <p>Finding resources for your child doesn't need to be difficult, confusing, or overwhelming. welcome to SpecialEducationResources.org, a free, not-for-profit tool to connect you with experts, advocacy, support organizations, and other resources you
-            need to help your child thrive!</p>
+          <p>
+            Finding resources for your child doesn't need to be difficult, confusing, or overwhelming. SpecialEducationResources.org is a free, not-for-profit tool to connect you with experts, advocacy, support organizations, and other resources you need to help
+            your child thrive!
+          </p>
         </div>
       </div>
     </div>
@@ -90,13 +92,31 @@
           <h4 class="step-number purple-background">Step Two</h4>
           <h4 class="step-title purple-text">What resources do you need?</h4>
         </div>
+        <div class="width-wrapper-tight white-background"></div>
         <div class="width-wrapper-tight white-background results-box">
           <h2>
             <span>Resources in</span>
             <span id="state-name">Your State</span>
           </h2>
           <hr>
-          <div id="resources-list"></div>
+          <div id="resources-list">
+            <!-- <p>Select a state to see resources</p> -->
+            <div class="resource-item">
+              <a target="_blank" href="http://www.example.com">
+                <h3>An Example Organisation</h3>
+              </a>
+              <div class="tags">
+                <span class="tag purple-background">An awesome tag</span></div>
+              <p class="resource-description">Awesome description</p>
+              <div>
+                <label for="abc123" class="resource-details-toggle-label">Show Details</label>
+              </div>
+              <input type="checkbox" id="abc123" name="horns" class="resource-details-toggle">
+              <div class="resource-details">
+                Awesome Stuff
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

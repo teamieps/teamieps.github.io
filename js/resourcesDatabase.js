@@ -8,7 +8,8 @@ var resourcesDatabase = [
     'Email': '',
     'Brief Description': 'ECAC is a private non-profit parent organization committed to improving the\nlives and education of ALL children through a special emphasis on children with disabilities. They provide information, education, outreach, and support to and for families with children across the state of North Carolina.',
     'Additional Information': '• Services:\no Assistance preparing for your child’s IEP:\n! Would you like assistance preparing for your child’s IEP Meeting or need someone to attend with you? If so, ECAC’s IEP Partners can help. If you would like more information about requesting an IEP Partner, call: 1-800- 962-6817 and ask to speak with a Parent Educator.\no ECAC Parent Training and Information Center: All services are provided to parents and families at no cost! (http://www.ecac-parentcenter.org/About-the- PTI.aspx?sid=17&pid=3&red=yes)\n! Toll Free Parent Info Line answered by Parents\n! Individual Assistance with educational issues\n! Parent and Professional Education workshops on a variety of topics ! Lending Library\n! Information packets, (paper and on CD)\n! NewsLine newsletter and ECAC Online!, our electronic newsletter\n! IEP Partners\n! Parent-to-Parent support\n! Assistance to parent groups\no Parent trainings and workshops:\n! Schedule a FREE workshop in your area: Please contact Margaret\nCampbell at 1-800-962-6817, ext. 317. o Hispanic Outreach Coordinator:\n! Teresa Peña, Parent Educator, Hispanic Outreach Coordinator, 1-800-962- 6817, ext. 324 tpena@ecacmail.org',
-    'Notes': 'The following resources are from :https://www.cidd.unc.edu/docs/lend/ResourceGuideforParentsandFamiliesofChildrenwithSpecialHealthCareNeedsinNorthCarolina.pdf'
+    'Notes': 'The following resources are from :https://www.cidd.unc.edu/docs/lend/ResourceGuideforParentsandFamiliesofChildrenwithSpecialHealthCareNeedsinNorthCarolina.pdf',
+    'Tags': ''
   },
   {
     'State': 'NC',
@@ -19,7 +20,8 @@ var resourcesDatabase = [
     'Email': 'FSP.CDR@unc.edu',
     'Brief Description': 'The mission of the Family Support Program is to promote\nprovide support for families with children who have special needs',
     'Additional Information': '• Services:\no All services are FREE and CONFIDENTIAL\no Information and Referral - to link families, caregivers, and providers to\ninformation about disabilities and diagnoses; parent-to-parent and other peer\nsupport; local, state, and national resources\no Find information about diagnosis and conditions',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'NC',
@@ -30,7 +32,8 @@ var resourcesDatabase = [
     'Email': '',
     'Brief Description': 'Family Support" helps familes with a child who has special needs access services and supports. Family support is a community-based approach that: Increases the strength and resilience of families; Supports parents as they help their children with special needs achieve their full potential; Improves community providers’ capacity to serve families with children who have special needs',
     'Additional Information': "All FSN Regional Affiliates Offer:\nParent-to-Parent Support\nOne-to-one emotional and informational support for parents with a child who has special needs by a trained Support Parent. Matching parents of newly diagnosed children with experienced, trained support parents helps families adjust, adapt, and feel supported.\n \nSupport Parent Training\nA six-hour workshop for parents who have received support and gained experience that they now want to \"give back\" to parents who are new to the journey. This workshop equips experienced parents and caregivers with tools needed to provide new parents with social, emotional and informational support.\n \nInformation and Referral\nRegional FSN affiliates provide families and service providers with information and referrals to community and regional services and resources to help children and their families.\n \nSupport Groups and Workshops\nProvides social and emotional support, information and skills training, and leadership opportunities for families.\n \nService System Navigation Support\nAssistance navigating complex service systems to increase access to needed supports and services for children and their families.\n \nParent to Parent Matching for Rare Disorders\nAll FSN Affiliates are able to request Parent-to-Parent matches for rare diseases and disorders. FSNNC is an Alliance Member of Parent-to-Parent USA a national network of Parent to Parent programs across the country matching parents seeking support with experienced, trained 'Support Parents.",
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'NC',
@@ -41,7 +44,8 @@ var resourcesDatabase = [
     'Email': '',
     'Brief Description': '• Mission: The Arc of North Carolina has been providing advocacy and services to people\nwith intellectual and developmental disabilities since 1953. The Arc believes that all people with intellectual and developmental disabilities have strengths, abilities and inherent value, are equal before the law, and must be treated with dignity and respect.\n• Services:\no The Arc provides direct supports and services to people with intellectual and\ndevelopmental disabilities (I/DD) that enable people to lead full rich lives in the community.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'NC',
@@ -52,7 +56,8 @@ var resourcesDatabase = [
     'Email': 'info@cidd.unc.edu',
     'Brief Description': 'o The CIDD provides an array of clinical services for children and adults who have\nor are at risk for developmental disabilities.\no Clinical services: Assessment, consultation, and treatment options for individuals\nwith behavioral, learning, and developmental needs across the lifespan.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'NC',
@@ -63,7 +68,8 @@ var resourcesDatabase = [
     'Email': 'TEACCH@unc.edu',
     'Brief Description': 'Autism Program provides clinical services such as diagnostic evaluations, parent\ntraining and parent support groups, social play and recreation groups, individual counseling for higher-functioning clients, and supported employment',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': 'Autism'
   },
   {
     'State': 'ME',
@@ -74,7 +80,8 @@ var resourcesDatabase = [
     'Email': 'kathy.despres@caresinc.org or\njenny.ardito@caresinc.org',
     'Brief Description': 'Advocacy, case management and assistive technology for Maine’s citizens with disabilities.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'ME',
@@ -85,7 +92,8 @@ var resourcesDatabase = [
     'Email': 'info@asmonline.org',
     'Brief Description': 'ASM has Information Specialists who provide resource information to parents, guardians, and schools to support individuals with Autism Spectrum Disorders. The specialists will work one on one to assist families, guardians and Individuals on the Autism Spectrum as they navigate child or adult services. The ASM website also has lots of links and resource materials for families.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': 'Autism'
   },
   {
     'State': 'ME',
@@ -96,7 +104,8 @@ var resourcesDatabase = [
     'Email': 'https://drme.org/contact',
     'Brief Description': 'Providing the following services: Information and Referral; Individual Advocacy; Legal Representation; Education and Training; Assistance with Self-Advocacy.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': 'Legal'
   },
   {
     'State': 'ME',
@@ -107,7 +116,8 @@ var resourcesDatabase = [
     'Email': 'info@namimaine.org',
     'Brief Description': 'NAMI Maine Family Respite exists to assist families by enabling a much needed break in the responsibility of caring for a child with significant developmental delays and behavioral or emotional disorders. Through a certified provider network, trained per diem staff are available to care for children with special needs in their communities so that their parents can get a break.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'ME',
@@ -118,7 +128,8 @@ var resourcesDatabase = [
     'Email': 'info@dsmaine.org',
     'Brief Description': 'Maine Down Syndrome Network (MDSN) is a network of families, professionals, and community members living in the state of Maine, who share the common goal of promoting awareness and acceptance of people with Down syndrome.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'ME',
@@ -129,7 +140,8 @@ var resourcesDatabase = [
     'Email': 'info@ldame.org',
     'Brief Description': 'LDA serves children, families, and adults with learning disabilities through support, education, and advocacy.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'ME',
@@ -140,7 +152,8 @@ var resourcesDatabase = [
     'Email': 'mainefragilex@yahoo.com',
     'Brief Description': 'Provides educational and emotional support for those affected by Fragile X, promotes public and professional awareness, and supports research toward improved treatments and a cure for Fragile X Syndrome.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'ME',
@@ -151,7 +164,8 @@ var resourcesDatabase = [
     'Email': '',
     'Brief Description': 'A program of crisis and counseling centers for parents of children with behavioral needs.  Through parent-to-parent sharing of experiences and knowledge, G.E.A.R. Parent Network empowers parents of children with behavioral health needs to build on their family’s strengths and to advocate for their family’s needs.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'ME',
@@ -162,7 +176,8 @@ var resourcesDatabase = [
     'Email': 'Executive Director Nancy Cronin: nancy.e.cronin@maine.gov',
     'Brief Description': 'The Maine Developmental Disabilities Council (MDDC) is a partnership of people with disabilities, their families, and agencies which identifies barriers to community inclusion, self determination, and independence. The Council acts to effect positive change through advocacy, training, demonstration projects, and support for other inclusive and collaborative systemic change activities.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': '',
@@ -173,7 +188,8 @@ var resourcesDatabase = [
     'Email': '',
     'Brief Description': '',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'MA',
@@ -184,7 +200,8 @@ var resourcesDatabase = [
     'Email': 'info@aane.org',
     'Brief Description': 'The Asperger / Autism Network (AANE) works with individuals, families, and professionals to help people with Asperger Syndrome and similar autism spectrum profiles build meaningful, connected lives',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': 'Autism'
   },
   {
     'State': 'ME',
@@ -195,7 +212,8 @@ var resourcesDatabase = [
     'Email': 'info@maineadaptive.org',
     'Brief Description': 'Founded in 1982, Maine Adaptive is now the largest year-round adaptive recreation program in the state of Maine for adults and children with disabilities. Over 400 volunteers assist our athletes in appreciating the joys and challenges of sports participation.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'ME',
@@ -206,7 +224,8 @@ var resourcesDatabase = [
     'Email': 'frc@frcdsn.org',
     'Brief Description': 'The FRC provides information services throughout the Lowcountry and was organized to promote opportunities for learning, inclusion, and empowerment for individuals with disabilities and special needs, their families, and their communities through such means as education, advocacy, and outreach.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'SC',
@@ -217,7 +236,8 @@ var resourcesDatabase = [
     'Email': 'info@familyconnectionsc.org',
     'Brief Description': 'Families with shared experiences are uniquely qualified to help each other, offering support, guidance and encouragement. Because of this, all of our programs and services are family centered and based on the concept of parent-to-parent support. Whether you’re just beginning your journey or have a question along the way, we offer a variety of services and resources that can help.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'SC',
@@ -228,7 +248,8 @@ var resourcesDatabase = [
     'Email': 'scas@scautism.org',
     'Brief Description': 'The mission of the South Carolina Autism Society (SCAS) is to equip those affected by Autism Spectrum Disorders with knowledge and support to maximize their quality of life.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': 'Autism'
   },
   {
     'State': 'SC',
@@ -239,7 +260,8 @@ var resourcesDatabase = [
     'Email': 'info@pandasc.org',
     'Brief Description': 'Since 1977 P&A has been an independent, statewide, non-profit corporation that protects and advances the legal rights of people with disabilities.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'GA',
@@ -250,7 +272,8 @@ var resourcesDatabase = [
     'Email': 'http://p2pga.org/index.php/contact-us-53/contact-p2p',
     'Brief Description': 'Families need to work together with service providers, agencies, and other professionals when making decisions that affect their children. Our education services provide opportunities for families to build on existing strengths to become stronger advocates.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'PA',
@@ -261,7 +284,8 @@ var resourcesDatabase = [
     'Email': 'support@autismofpa.org',
     'Brief Description': 'Founded by parents in 1996, Autism Connection of Pennsylvania is a 501(c)(3) nonprofit, serving thousands of people seeking help for autism concerns. Professional staff, all parents who understand, provide telephone support, weekly autism news, autism-friendly activities, and coordinate more than 76 support groups across Pennsylvania.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': 'Autism'
   },
   {
     'State': 'PA',
@@ -272,7 +296,8 @@ var resourcesDatabase = [
     'Email': '',
     'Brief Description': '“ACHIEVA, formerly Arc Allegheny, is western Pennsylvania’s largest provider of comprehensive services and supports for children and adults with disabilities and their families.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'CT',
@@ -283,7 +308,8 @@ var resourcesDatabase = [
     'Email': 'info@autismconnecticut.org',
     'Brief Description': 'ASRC is a support organization for individuals, families and professionals involved with autism spectrum disorders. They offer resources, support groups, workshops, conferences, on-site professional training and other services and supports.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': 'Autism'
   },
   {
     'State': 'CT',
@@ -294,7 +320,8 @@ var resourcesDatabase = [
     'Email': 'lsimoes@arcofct.org',
     'Brief Description': 'The Arc of Connecticut is an advocacy organization committed to protecting the rights of people with mental retardation and related developmental disabilities. They focus on promoting opportunitiesfor the person’s full inclusion within their communities. To findyour local Arc, please visit their website and click on the Arc/ Connecticut Chapters button on the left hand side.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'CT',
@@ -305,7 +332,8 @@ var resourcesDatabase = [
     'Email': 'adacoalition@gmail.com',
     'Brief Description': 'The ADACC informs Connecticut citizens about the ADA and works to foster voluntary compliance. It offers a way for any interested person, business, employer and public agency to obtain information. They also provide training and technical assistance on rights and responsibilities under the ADA.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': 'Legal'
   },
   {
     'State': 'CT',
@@ -316,7 +344,8 @@ var resourcesDatabase = [
     'Email': 'info@ccsnct.org',
     'Brief Description': 'CCSN is an interdisciplinary clinic specializing in the diagnosis, evaluation and treatment of children and adolescents with complex neurodevelopmental disabilities, particularly autism spectrum disorders, pediatric chronic illness, developmental disabilities and severe behavioral difficulties.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': 'Autism'
   },
   {
     'State': 'CT',
@@ -327,7 +356,8 @@ var resourcesDatabase = [
     'Email': 'erenr1@southernct.edu',
     'Brief Description': 'The Center of Excellence on Autism Spectrum Disorders serves as a resource and collaborative partner by developing, validating and delivering effective, innovative training, services and technical assistance to teachers, other school-based personnel, families and community services providers in the use of evidence-based practices for individuals ages 3-21 with autism spectrum disorders in Connecticut.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': 'Autism'
   },
   {
     'State': 'CT',
@@ -338,7 +368,8 @@ var resourcesDatabase = [
     'Email': 'clc@clcct.org',
     'Brief Description': 'Children’s Law Center of Connecticut, Inc, is a private nonprofit organization that represents disadvantaged children in family court.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': 'Legal'
   },
   {
     'State': 'CT',
@@ -349,7 +380,8 @@ var resourcesDatabase = [
     'Email': 'ctfeat1@ctfeat.org',
     'Brief Description': 'CT FEAT provides information and resources to help parents evaluate the effectiveness of current autism treatment. They approach and support families implementing intensive treatment programs based on the principles of Applied Behavior Analysis (ABA).',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': 'Autism'
   },
   {
     'State': 'CT',
@@ -360,7 +392,8 @@ var resourcesDatabase = [
     'Email': 'timperati@ctfsn.org',
     'Brief Description': 'The Connecticut Family Support Network is a statewide network of parents of children with a wide range of disabilities and special health care needs who provide information, resources and training to families',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'CT',
@@ -371,7 +404,8 @@ var resourcesDatabase = [
     'Email': 'info@afcamp.org',
     'Brief Description': 'Trains parents of children with disabilities from every school district in Hartford to become advocates within their schools, and assists them with training other parents to become advocates. Offers education, training, and resource materials on disability awareness, disability laws including ADA, and rights and responsibilities of parents of children with disabilities.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'CT',
@@ -382,7 +416,8 @@ var resourcesDatabase = [
     'Email': 'cpac@cpacinc.org',
     'Brief Description': "Offers information and resource materials for parents of children with special educational needs and assistance with advocating for their children's education, employment, and independent living needs.",
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'CT',
@@ -393,7 +428,8 @@ var resourcesDatabase = [
     'Email': 'jhawke@favor-ct.org',
     'Brief Description': "FAVOR provides advocacy, family leadership training, and support for parents, families, and professional caregivers on behavioral health issues, and legislative advocacy and training on children's behavioral health and special education issues.  FAVOR accepts all referrals and provides services based on current capacity.",
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'CT',
@@ -404,7 +440,8 @@ var resourcesDatabase = [
     'Email': 'info@disrightsct.org',
     'Brief Description': 'Education Advocates provide information, advocacy, and support for parents of children in the special education system. Families in need of advocacy can contact a Special Education Advocate.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'CT',
@@ -415,7 +452,8 @@ var resourcesDatabase = [
     'Email': 'Staff emails are listed here: https://arict.org/ContactPeople.html',
     'Brief Description': "ARI's staff will participate in IEP and transition planning meetings, and will assist each student ages 15+ to develop their transition goals in order to work toward the future.",
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': 'Transition'
   },
   {
     'State': 'CT',
@@ -426,7 +464,8 @@ var resourcesDatabase = [
     'Email': 'Info@spedconnecticut.org',
     'Brief Description': 'SpEdConnecticut, Inc. formerly known as the Learning Disabilities Association of Connecticut , is a nonprofit organization dedicated to making a positive difference in the educational experience of children with disabilities.  We provide information, training, and advocacy support to families as they seek appropriate educational services for their children with special education needs.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'CT',
@@ -437,7 +476,8 @@ var resourcesDatabase = [
     'Email': 'info@spednet.org',
     'Brief Description': 'SPED*NET Special Education Network of New Canaan, Ltd. (SPED*NET New Canaan”) is organized exclusively to educate the public on special education and disability-related issues.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'CT',
@@ -448,7 +488,8 @@ var resourcesDatabase = [
     'Email': 'info@spednetwilton.org',
     'Brief Description': 'Special education information and advocacy group for parents and staff of students with special needs offers seminars during the school year; lends books and videos of its speakers, provides handouts and information, and publishes an online special education handbook.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'CT',
@@ -459,7 +500,8 @@ var resourcesDatabase = [
     'Email': 'advocate@wecahr.org',
     'Brief Description': 'Includes reviewing (in person or by telephone) school issues that concern the parent and the child, preparation for the Planning and Placement Team (PPT) meetings, attendance and participation in the PPT session, follow-up with the parent as needed to ensure that conclusions agreed upon at the meeting(s) are enacted.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'CT',
@@ -470,7 +512,8 @@ var resourcesDatabase = [
     'Email': 'PadresAbriendoPuertasINC@aol.com',
     'Brief Description': 'Statewide special education advocacy group for Hispanic parents teaches parents to be advocates for their children with disabilities and offers workshops, resource materials, monthly information exchanging meetings and parent-to-parent support.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'CT',
@@ -481,7 +524,8 @@ var resourcesDatabase = [
     'Email': 'ghla@ghla.org',
     'Brief Description': 'Advocacy, legal representation, advice, and information for some education related issues, including children and youth in need of special education services, residency issues, suspension and expulsions, and education rights of children who are homeless.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'CT',
@@ -492,7 +536,8 @@ var resourcesDatabase = [
     'Email': 'infoucedd@uchc.edu',
     'Brief Description': "Parent Leadership and Advocacy is a program consisting of six modules covering a range of relevant topics and issues. These modules will help parents learn how to advocate for their child's needs as well as to improve the quality of life for other children and families in Connecticut.",
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'CT',
@@ -503,7 +548,8 @@ var resourcesDatabase = [
     'Email': 'info@smartkidswithld.org',
     'Brief Description': 'Learning disabilities education organization provides information and support to parents of children with learning disabilities or attention deficit hyperactivity disorder (ADHD) primarily through its website, blog, regional educational programs or through its e-newsletter.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'NJ',
@@ -514,7 +560,8 @@ var resourcesDatabase = [
     'Email': '',
     'Brief Description': 'The SPAN Parent Advocacy Network is an independent 501(c)3 organization committed to empowering families as advocates and partners in improving education, health, and mental health outcomes for infants, toddlers, children and youth. SPAN is a “first stop” for New Jersey families.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'NJ',
@@ -525,7 +572,8 @@ var resourcesDatabase = [
     'Email': 'info@advopps.org',
     'Brief Description': 'Advancing Opportunities, Inc., is a 501 (c) 3 non-profit organization providing services and supports to people with disabilities and their families so they can live independently.  Recognized as one of the leading disability service providers in the state of New Jersey, the agency is committed to person-centered services delivered in the community.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'NJ',
@@ -536,7 +584,8 @@ var resourcesDatabase = [
     'Email': '',
     'Brief Description': 'An alliance of more than 30 state-approved private special education schools in Northern and Central New Jersey whose members are committed to great outcomes.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'NJ',
@@ -547,7 +596,8 @@ var resourcesDatabase = [
     'Email': 'info@arcnj.org',
     'Brief Description': "The Arc of New Jersey is the state's largest organization advocating for and serving children and adults with intellectual and developmental disabilities and their families. The Arc of New Jersey is an affiliated chapter of The Arc, and community-based services are available statewide through our strong network of Local County Chapters.",
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'NJ',
@@ -558,7 +608,8 @@ var resourcesDatabase = [
     'Email': '',
     'Brief Description': 'Autism Family Services of New Jersey is a state-wide, non-profit charitable agency dedicated to helping improve the quality of life for people affected by autism and their loved ones. Autism Family Services of New Jersey is a statewide organization with offices located in Brick, Parsippany, Trenton and Barrington.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': 'Autism'
   },
   {
     'State': 'NJ',
@@ -569,7 +620,8 @@ var resourcesDatabase = [
     'Email': '',
     'Brief Description': '',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': 'Autism'
   },
   {
     'State': 'NJ',
@@ -580,7 +632,8 @@ var resourcesDatabase = [
     'Email': '',
     'Brief Description': '',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': 'Autism'
   },
   {
     'State': 'NJ',
@@ -591,7 +644,8 @@ var resourcesDatabase = [
     'Email': '',
     'Brief Description': '',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': 'Autism'
   },
   {
     'State': 'NJ',
@@ -602,7 +656,8 @@ var resourcesDatabase = [
     'Email': '',
     'Brief Description': 'The Family Support Center is a clearinghouse of up-to-date information on a national, state and local family support programs, services and disabilities. The Center offers a “One-Stop-Shopping” approach to individuals seeking information on disabilities and services by providing them with easy access to a comprehensive array of services',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'NJ',
@@ -613,7 +668,8 @@ var resourcesDatabase = [
     'Email': '',
     'Brief Description': 'Epilepsy Services of New Jersey, an affiliate of The Family Resource Network, is a state-wide, non-profit charitable agency dedicated to helping to improve the quality of life for people affected by epilepsy and their loved ones.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': 'Epilepsy'
   },
   {
     'State': 'NJ',
@@ -624,7 +680,8 @@ var resourcesDatabase = [
     'Email': '',
     'Brief Description': 'Facilitating unique and individualized planning processes in helping people with disabilities make informed choices. Our person-centered teams support life destination decisions and help you find the right paths to achieve them.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'NJ',
@@ -635,7 +692,8 @@ var resourcesDatabase = [
     'Email': '',
     'Brief Description': 'The Family Resource Network (FRN) is dedicated to offering individuals and their families with continuing needs the greatest opportunities, resources and services to support a full and happy life.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'NJ',
@@ -646,7 +704,8 @@ var resourcesDatabase = [
     'Email': 'information@autismnj.org',
     'Brief Description': 'Connects those with autism to necessary resources to achieve their full potential',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': 'Autism'
   },
   {
     'State': 'NJ',
@@ -657,7 +716,8 @@ var resourcesDatabase = [
     'Email': 'njadeaf@gmail.com',
     'Brief Description': 'This Association shall be the focal point of all cooperating agencies within the State in promoting the welfare of the deaf in educational measures, in employment, in legislation, and in any other field pertaining to or affecting the deaf in New Jersey in their pursuit of economic security, equal opportunity, and all their just rights and privileges as citizens.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': 'Deafness'
   },
   {
     'State': 'NJ',
@@ -668,7 +728,8 @@ var resourcesDatabase = [
     'Email': 'nfbnj1@verizon.net',
     'Brief Description': 'Every day we raise the expectations of blind people, because low expectations create obstacles between blind people and our dreams.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': 'Blindness'
   },
   {
     'State': 'NJ',
@@ -679,7 +740,8 @@ var resourcesDatabase = [
     'Email': '',
     'Brief Description': '',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'NJ',
@@ -690,7 +752,8 @@ var resourcesDatabase = [
     'Email': 'elc@edlawcenter.org',
     'Brief Description': 'Founded in 1973, the Education Law Center (ELC) serves as the leading voice for New Jersey’s public school children and has become one of the most effective advocates for equal educational opportunity and education justice in the United States. Widely recognized for groundbreaking court rulings on behalf of at-risk students, ELC also promotes educational equity through coalition building, litigation support, policy development, communications, and action-focused research in New Jersey, in other states, and at the federal level.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': 'Legal'
   },
   {
     'State': 'NJ',
@@ -701,7 +764,8 @@ var resourcesDatabase = [
     'Email': 'Admin@abcdnj.org',
     'Brief Description': 'The Alliance for the Betterment of Citizens with Disabilities (ABCD) is a New Jersey-based non-partisan not for profit organization dedicated to improving the lives of people with complex physical and neurological developmental disabilities so that they may have the opportunity to attain the highest level of purpose and dignity.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'NJ',
@@ -712,7 +776,8 @@ var resourcesDatabase = [
     'Email': 'team@njcie.org',
     'Brief Description': 'NJCIE supports inclusive education for all students with disabilities as a fundamental civil right. NJCIE views inclusion as a means to creating an equitable, socially-just democratic society.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'NJ',
@@ -723,7 +788,8 @@ var resourcesDatabase = [
     'Email': 'advocate@drnj.org',
     'Brief Description': 'Private, non-profit, consumer-directed organization established to advocate for, advise and assist individuals and families with disabilities.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'NJ',
@@ -734,7 +800,8 @@ var resourcesDatabase = [
     'Email': '',
     'Brief Description': 'Clinic law students provide representation and advocacy to parents and caregivers seeking to obtain appropriate early intervention and educational services and placements, and educate parents and others involved in the lives of children with disabilities about their legal rights and responsibilities.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': 'Legal'
   },
   {
     'State': 'NJ',
@@ -745,7 +812,8 @@ var resourcesDatabase = [
     'Email': 'http://rwjms.rutgers.edu/boggscenter/contact_us/reqform.php',
     'Brief Description': 'The Boggs Center is New Jersey’s federally designated University Center for Excellence in Developmental Disabilities Education, Research, and Service. Part of Rutgers Robert Wood Johnson Medical School, The Boggs Center prepares students through interdisciplinary programs, provides community training and technical assistance, conducts research, and disseminates information and educational materials.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'NJ',
@@ -756,7 +824,8 @@ var resourcesDatabase = [
     'Email': 'doug@specialedadvocatenj.com',
     'Brief Description': 'If your child has an IEP, but it doesn’t seem to be effective, or you think that your child may need special education services, you need to work closely with the school’s child study team.  I provide fee-for-service non-attorney advocacy services for parents and their children.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'FL',
@@ -767,7 +836,8 @@ var resourcesDatabase = [
     'Email': '',
     'Brief Description': 'Disability Rights Florida was founded in 1977 as the statewide designated protection and advocacy system for individuals with disabilities in the State of Florida. Disability Rights Florida is a not-for-profit corporation that has authority and responsibility under nine federal grants. Our services are free and confidential.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'FL',
@@ -778,7 +848,8 @@ var resourcesDatabase = [
     'Email': '',
     'Brief Description': 'The Arc of Florida works with local, state and national partners and advocates for people with intellectual disabilities, autism, spina bifida, cerebral palsy (CP), prader-willi syndrome and other developmental disabilities to be fully included in all aspects of their community.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'FL',
@@ -789,7 +860,8 @@ var resourcesDatabase = [
     'Email': 'BE@flhealth.gov',
     'Brief Description': 'provides resources and information on developmental disabilities for pregnant women, health care providers, parents and families',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'FL',
@@ -800,7 +872,8 @@ var resourcesDatabase = [
     'Email': '',
     'Brief Description': "Offers a variety of services to help people with disabilities address life's challenges and achieve personal goals.",
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'FL',
@@ -811,7 +884,8 @@ var resourcesDatabase = [
     'Email': 'info@familycafe.net',
     'Brief Description': 'Brings together individuals with disabilities and their families with state agencies, non-profit organizations and other service providers for networking opportunities',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'FL',
@@ -822,7 +896,8 @@ var resourcesDatabase = [
     'Email': 'info@faimh.org',
     'Brief Description': 'Focused on prevention, identification and treatment of emotional and behavioral disorders in children birth to age 5',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'FL',
@@ -833,7 +908,8 @@ var resourcesDatabase = [
     'Email': 'fddc@fddc.org',
     'Brief Description': 'Advocates and promotes meaningful participation in all aspects of life for Floridians with developmental disabilities',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'FL',
@@ -844,7 +920,8 @@ var resourcesDatabase = [
     'Email': 'ahearnm@nefec.org',
     'Brief Description': 'Florida Diagnostic & Learning Resources System (FDLRS)',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'FL',
@@ -855,7 +932,8 @@ var resourcesDatabase = [
     'Email': '',
     'Brief Description': 'A fully accredited state public school and outreach center available tuition-free to eligible Pre-K and K-12 deaf/hard of hearing or blind/visually impaired students, including meals, boarding, transportation and other services.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'FL',
@@ -866,7 +944,8 @@ var resourcesDatabase = [
     'Email': 'Diana.McLendon@fldoe.org',
     'Brief Description': 'The Center for Autism & Related Disabilities (CARD) provides support and assistance with the goal of optimizing the potential of people with autism spectrum disorder and related disabilities.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'FL',
@@ -877,7 +956,8 @@ var resourcesDatabase = [
     'Email': '',
     'Brief Description': 'Autism Society of Florida statewide affiliates are your best source of information and support. Affiliates are volunteer-led by parents, care providers and other professionals reaching out to individuals with Autism Spectrum Disorder and their families with information, support, and encouragement.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'FL',
@@ -888,7 +968,8 @@ var resourcesDatabase = [
     'Email': 'richlabelle @ fndusa.org',
     'Brief Description': 'FND is a grassroots organization for persons with disabilities and their families that is family-centered and family-driven.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'FL',
@@ -899,7 +980,8 @@ var resourcesDatabase = [
     'Email': 'info@faastinc.org',
     'Brief Description': 'The Florida Alliance for Assistive Services and Technology is the State of Florida’s number one resource for assistive technology (AT).',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'FL',
@@ -910,7 +992,8 @@ var resourcesDatabase = [
     'Email': 'CTDOmbudsman@dot.state.fl.us',
     'Brief Description': 'The Florida Commission for the Transportation Disadvantaged (CTD) is an independent agency responsible for the coordination of transportation services for older adults, persons with disabilities, persons of low income and children at risk.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'FL',
@@ -921,7 +1004,8 @@ var resourcesDatabase = [
     'Email': 'APD.Info@apdcares.org',
     'Brief Description': 'The APD works in partnership with local communities and private providers to assist people who have developmental disabilities and their families. APD also provides assistance in identifying the needs of people with developmental disabilities for supports and services.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'FL',
@@ -932,7 +1016,8 @@ var resourcesDatabase = [
     'Email': 'Rori@BrightFeats.com',
     'Brief Description': 'Free community resource directory for parents/caregivers with children that have medical, educational and special needs',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'FL',
@@ -943,7 +1028,8 @@ var resourcesDatabase = [
     'Email': 'info@dsacf.org',
     'Brief Description': 'DSACF is the leading voice for all individuals with Down syndrome and their families. We offer hope, acceptance and empowerment through advocacy, education and awareness as we guide individuals with Down syndrome through life. Together, we create a Central Florida community composed of and dedicated to individuals with Down syndrome – and those who love them – so that each may realize their potential.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
   },
   {
     'State': 'FL',
@@ -954,6 +1040,343 @@ var resourcesDatabase = [
     'Email': '',
     'Brief Description': 'Advocates, educates and empowers individuals with developmental disabilities and their families.',
     'Additional Information': '',
-    'Notes': ''
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': 'NV',
+    'Organization Name': 'Angel Flight West',
+    'Website': 'http://www.angelflightwest.org',
+    'Address': '3161 Donald Douglas Loop South\nSanta Monica, CA 90405',
+    'Phone Number': '(310) 390-2958',
+    'Email': 'info@angelflightwest.org',
+    'Brief Description': "(AFW) arranges free air transportation for people who need to travel long distances to access needed care. Generous volunteer pilots donate their time, their flying skills, and all costs. There's never a charge for an Angel Flight West mission.  AFW also serves as the “official airline” for specialty camps attended by children from Nevada.",
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': '',
+    'Organization Name': 'Autism Coalition of Nevada',
+    'Website': 'http://www.aconv.org',
+    'Address': '',
+    'Phone Number': '850.291.6778',
+    'Email': 'acon@aconv.org',
+    'Brief Description': 'The Autism Coalition of Nevada (ACON) is comprised of representatives from various autism advocacy organizations, agencies and professionals who serve Nevadans with Autism Spectrum Disorder and related Neurodevelopmental Disorders throughout our state.',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': '',
+    'Organization Name': 'Autism Treatment Assistance Program (ATAP)',
+    'Website': 'http://adsd.nv.gov/Programs/Autism/ATAP/ATAP/',
+    'Address': '3416 Goni Road, Suite D-132\nCarson City, NV 89706',
+    'Phone Number': '(775) 687-4210',
+    'Email': 'adsdatap@adsd.nv.gov',
+    'Brief Description': 'Nevada’s Autism Treatment Assistance Program (ATAP) was created to assist parents and caregivers with the expensive cost of providing Autism-specific treatments to their child with Autism Spectrum Disorder (ASD). ATAP is a statewide program that provides temporary assistance and funding to pay for evidenced-based treatment such as Applied Behavior Analysis (ABA) for children on the Autism Spectrum, who are under the age of 20 and are diagnosed as a person with Autism Spectrum Disorder by a physician, psychologist, child/adolescent psychiatrist, pediatric neurologist or other qualified professional. A diagnosis from a multidisciplinary team is acceptable when in accompanied by an appropriate assessment report.',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': '',
+    'Organization Name': 'Family TIES of Nevada',
+    'Website': 'https://familytiesnv.net',
+    'Address': '',
+    'Phone Number': 'Health Information Line: (866) 326-8437; (775) 823-9500',
+    'Email': '',
+    'Brief Description': 'Family TIES of Nevada is a statewide nonprofit organization that serves people with disabilities throughout their lifespan, and supports their families and professionals who work on their behalf.',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': '',
+    'Organization Name': 'Deaf Centers of Nevada',
+    'Website': 'http://dhharc.org',
+    'Address': '',
+    'Phone Number': '',
+    'Email': '',
+    'Brief Description': 'Deaf Centers of Nevada provides education, advocacy, support and resources to families, children and individuals who have hearing impairments.',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': '',
+    'Organization Name': 'Family Resource Centers of Nevada',
+    'Website': 'http://dhhs.nv.gov/Programs/Grants/Programs/FRC/Family_Resource_Center/',
+    'Address': 'Muliple: http://dhhs.nv.gov/uploadedFiles/dhhsnvgov/content/Programs/Grants/Programs/FRC/FRC_Statewide_DirectoryREV.pdf',
+    'Phone Number': '(702) 920-6515',
+    'Email': '',
+    'Brief Description': 'Family Resource Centers provide case management, information, and referrals for individuals and families in need of assistance in accessing services and programs that will strengthen and support the family. FRCs collaborate with other agencies, schools, faith-based organizations, and government agencies to assist families to obtain needed services. FRCs emphasize community based, collaborative services that are culturally competent, accessible, and flexible.',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': '',
+    'Organization Name': 'The Lovaas Center',
+    'Website': 'http://thelovaascenter.com',
+    'Address': '5550 W. Flamingo Rd. Suite C-5\nLas Vegas, Nevada 89103',
+    'Phone Number': '(702) 877-2520',
+    'Email': '',
+    'Brief Description': 'The Lovaas Center provides early intensive behavioral intervention, which incorporates Applied Behavior Analysis (ABA) and was developed in the psychology department of UCLA under the direction of Dr. O. Ivar Lovaas. It is intended to provide intensive early intervention for young children (under four years old when treatment starts) with autism.',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': '',
+    'Organization Name': 'Nevada 2-1-1',
+    'Website': 'https://www.nevada211.org',
+    'Address': '',
+    'Phone Number': '2-1-2001',
+    'Email': '',
+    'Brief Description': 'On-line access/referral to basic human services, health resources, employment support services, support for seniors and persons with disabilities, and programs for children, youth, and families in Nevada. And 2-1-1 is an easy-to-remember telephone number you can dial that connects callers to free information about critical health and human services available in their community.',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': '',
+    'Organization Name': 'Nevada Act Early',
+    'Website': 'http://www.nevadaactearly.org',
+    'Address': '',
+    'Phone Number': 'Questions: 775-682-7019',
+    'Email': 'dvigil@medicine.nevada.edu',
+    'Brief Description': 'Nevada Act Early, mainly an online resourceeducates and brings awareness to parents, healthcare professionals and educators in all communities across Nevada about early warning signs of neurodevelopmental disorders. Learn about early warning signs of Autism and find services for your child.',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': '',
+    'Organization Name': 'Nevada Disability Advocacy and Law Center: Statewide Overview',
+    'Website': 'http://www.ndalc.org',
+    'Address': '',
+    'Phone Number': '',
+    'Email': '',
+    'Brief Description': 'The Nevada Disability Advocacy & Law Center (NDALC) is a private, statewide non-profit organization that serves as Nevada’s federally-mandated protection and advocacy system for human, legal, and service rights for individuals with disabilities.',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': '',
+    'Organization Name': 'Nevada Disability Advocacy and Law Center: Las Vegas',
+    'Website': 'http://www.ndalc.org',
+    'Address': '2820 West Charleston Boulevard #11\nLas Vegas, NV 89102',
+    'Phone Number': '702-257-8150',
+    'Email': 'lasvegas@ndalc.org',
+    'Brief Description': '',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': '',
+    'Organization Name': 'Nevada Disability Advocacy and Law Center: Reno',
+    'Website': 'http://www.ndalc.org',
+    'Address': '1875 Plumas Street #1\nReno, NV 89509',
+    'Phone Number': '775-333-7878',
+    'Email': 'reno@ndalc.org',
+    'Brief Description': '',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': '',
+    'Organization Name': 'Nevada Disability Advocacy and Law Center: Elko',
+    'Website': 'http://www.ndalc.org',
+    'Address': '905 Railroad Street #104B\nElko, NV 89801',
+    'Phone Number': '775-777-1590',
+    'Email': 'elko@ndalc.org',
+    'Brief Description': '',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': '',
+    'Organization Name': 'Nevada Care Connection',
+    'Website': 'https://nevadaadrc.com/about-us/adrc-contact-us',
+    'Address': '3416 Goni Road | Suite D-132 | Carson City, NV 89706',
+    'Phone Number': 'Techinal Assistance: Southern Nevada: 702-486-3600 | Rural & Northern Nevada: 775-687-0585',
+    'Email': 'adsdhelpdesk@adsd.nv.gov',
+    'Brief Description': 'The purpose of this website is to provide up-to-date resources and information that will support and assist caregivers as they care for family members and friends that are frail or disabled.',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': '',
+    'Organization Name': 'NV Center for Excellence in Developmental Disabilities',
+    'Website': 'https://www.unr.edu/nced',
+    'Address': '1664 N. Virginia Street\n\nReno, NV 89557',
+    'Phone Number': '(775) 784-4921',
+    'Email': 'nced@unr.edu',
+    'Brief Description': 'Works with consumers, agencies, and programs to assist Nevadans with developmental disabilities of all ages to be independent and productive citizens who are included in their communities.',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': '',
+    'Organization Name': "Nevada Children's Mental Health- Division of Child and Family Services (DCFS)",
+    'Website': 'http://dcfs.nv.gov/Programs/CMH/',
+    'Address': '',
+    'Phone Number': '',
+    'Email': '',
+    'Brief Description': 'DCFS provides mental health treatment services to children between birth and six years of age with emotional disturbance or high risk factors for emotional and behavioral disturbance and associated developmental delays. Provides community-based outpatient, individual and family oriented mental health services for children from six through seventeen years of age.',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': '',
+    'Organization Name': 'Nevada Dual Sensory Impairment Project',
+    'Website': 'http://www.unr.edu/educ/ndsip/',
+    'Address': 'Nevada Dual Sensory Impairment Project\nCollege of Education\nUniversity of Nevada, Reno/MS 299\nReno, NV 89557',
+    'Phone Number': '775-784-6471 (phone)\n1-877-621-5042 (toll free in Nevada)',
+    'Email': 'MAD@unr.edu',
+    'Brief Description': 'The purpose is to enhance educational services and provide technical assistance to support parents, services providers, and other service agencies in meeting the educational needs of children and youth, birth through 21 years, who have dual sensory impairments-diagnosed with both vision and hearing impairments.',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': '',
+    'Organization Name': "Nevada Governor's Council on Developmental Disabilities",
+    'Website': 'http://www.nevadaddcouncil.org',
+    'Address': '896 W. Nye Lane Suite 202 \nCarson City, NV 89703',
+    'Phone Number': '775-684-8619',
+    'Email': 'elmarquez@dhhs.nv.gov',
+    'Brief Description': 'Their mission is to provide resources at the community level which promote equal opportunity and life choices for people with disabilities through which they may positively contribute to Nevada society.',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': '',
+    'Organization Name': 'Nevada P.E.P',
+    'Website': 'http://www.nvpep.org',
+    'Address': '7211 W. Charleston Blvd.\nLas Vegas, Nevada 89117',
+    'Phone Number': '(702) 388-8899',
+    'Email': 'pepinfo@nvpep.org',
+    'Brief Description': "Parents Encouraging Parents - Nevada's Parent Training & Information Center for families of children with disabilities. Our Mission - To increase the opportunities for home, community and school success for children with disabilities, including those who are at risk or who have serious emotional disturbances, their families and their service providers, through education, encouragement and empowerment activities.",
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': 'OR',
+    'Organization Name': 'FACTOegon',
+    'Website': 'https://factoregon.org/',
+    'Address': '2475 SE Ladd Ave. Suite 430\nPortland, OR 97214',
+    'Phone Number': '(503) 786-6082 or 1 (888)-988-3228',
+    'Email': 'support@factoregon.org',
+    'Brief Description': 'By families, for families. FACT is your one-stop resource! We are able to support you with: Understanding special education\nTrainings, workshops, and in-services; Family activities and get-togethers; Person-centered planning tools; Information and resources;  A support line  to answer your questions and talk to a parent whose been there.',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': 'OR',
+    'Organization Name': 'Oregon Council on Developmental Disabilities (OCDD)',
+    'Website': 'https://ocdd.org/',
+    'Address': '2475 SE Ladd Avenue, Suite 231, Portland, OR 97214.',
+    'Phone Number': '(503) 235-0369',
+    'Email': 'info@ocdd.org',
+    'Brief Description': 'The Oregon Council on Developmental Disabilities is made up of self-advocates, family members, representatives of advocacy organizations, and community organizations that provide services and supports to people with developmental disabilities.',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': 'OR',
+    'Organization Name': 'Easterseals Oregon',
+    'Website': 'http://www.easterseals.com/',
+    'Address': '7300 SW Hunziker St, Portland, OR 97223',
+    'Phone Number': '503-228-5108',
+    'Email': '',
+    'Brief Description': 'Children and adults with disabilities and special needs find highest-quality services designed to meet their individual needs when they come to Easterseals. Teams of therapists, teachers and other health professionals help each person overcome obstacles to independence and reach his or her personal goals. Easterseals also includes families as active members of any therapy program, and offers the support families need.',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': 'OR',
+    'Organization Name': 'Disability Rights Oregon',
+    'Website': 'https://droregon.org',
+    'Address': 'Disability Rights Oregon\n511 SW 10th Avenue, Suite 200\nPortland, Oregon 97205',
+    'Phone Number': '503-243-2081 or 1-800-452-1694',
+    'Email': '',
+    'Brief Description': 'We assist with legal problems directly related to disabilities.  We do this in a variety of ways, which include:\nProviding information, tools and referrals that empower self-advocacy; Promoting awareness of civil rights; Investigating and addressing reports of abuse and/or neglect; Pursuing policy changes and legislation that benefit people with disabilities; Representing individuals in cases where legal expertise is needed; Litigation when necessary',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': '',
+    'Organization Name': 'Special Olympics Oregon',
+    'Website': 'www.soor.org',
+    'Address': '419 NE 10th Ave., Portland, OR 97232',
+    'Phone Number': '503-248-0600',
+    'Email': 'info@soor.org',
+    'Brief Description': 'Special Olympics Oregon represents the largest disability population in Oregon, providing life-changing opportunities to children, youth and adults living with intellectual disabilities through our year-round programs and services. Learn more about what we do and who we serve.',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': '',
+    'Organization Name': 'Autism Society of Oregon',
+    'Website': 'http://autismsocietyoregon.org/',
+    'Address': '5100 SW MacAdam Ave, Suite 400, Portland, OR 97239',
+    'Phone Number': '1-888-Autism-1 (1-888-288-4761)',
+    'Email': 'info@AutismSocietyOregon.org]]',
+    'Brief Description': 'The state chapter of the Autism Society of America (ASA,) which is the oldest and largest grassroots organization within the autism community. Autism Society of Oregon (ASO) seeks to empower individuals with autism, their families, and their service providers to improve the quality of their lives through support and information.',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': '',
+    'Organization Name': 'University Center for Excellence in Developmental Disabilities',
+    'Website': 'https://www.ohsu.edu/xd/research/centers-institutes/institute-on-development-and-disability/ucedd/',
+    'Address': '3181 S.W. Sam Jackson Park Rd.\nPortland, Oregon 97239-3098',
+    'Phone Number': '503-494-8364',
+    'Email': 'ucedd@ohsu.edu',
+    'Brief Description': 'University Centers for Excellence in Developmental Disabilities (UCEDD) are organizations, located at universities across the nation, that focus on improving the lives of people with disabilities and their families. Through education, service, research and outreach activities, we work to be instrumental in changing policy, providing training, and educating the public about major disability issues.',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': '',
+    'Organization Name': 'Disability Compass',
+    'Website': 'http://www.disabilitycompass.org/',
+    'Address': '',
+    'Phone Number': '',
+    'Email': '',
+    'Brief Description': 'Disability Compass is an interactive web-based resource center, developed in Oregon, providing local community and national information on services, products, and special health care resources for people with disabilities, their families, and their supporters. Please visit this site to further search for links to resources within Oregon communities, statewide, and abroad.',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
+  },
+  {
+    'State': '',
+    'Organization Name': 'The Arc of Oregon',
+    'Website': 'https://thearcoregon.org',
+    'Address': '2405 Front St #120\nSalem, OR 97301',
+    'Phone Number': '(503) 581-2726',
+    'Email': '',
+    'Brief Description': 'A statewide membership organization of more than 2000 individuals, working together to create a better tomorrow for individuals with intellectual and developmental disabilities, and their families. The Arc of Oregon advocates for the rights and full community participation of all children and adults with intellectual and developmental disabilities.',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
   }
 ]

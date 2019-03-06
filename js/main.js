@@ -104,7 +104,7 @@ jQuery('#stateSelectionDropdown').change(function (event) {
   jQuery('#jqvmap1_' + selectedState).click()
 })
 
-const resourceItemHTML = '<div class="resource-item"><a target="_blank"><h4></h4></a><p class="resource-description"></p></div>'
+const resourceItemHTML = '<div class="resource-item"><a target="_blank"><h3></h3></a><div class="tags"></div><p class="resource-description"></p></div>'
 
 const displayResources = function (stateCode) {
   const selectedStateCode = stateCode.toUpperCase(stateCode)
@@ -118,9 +118,17 @@ const displayResources = function (stateCode) {
 
   for (let resource of filteredResources) {
     let resourceNode = jQuery(resourceItemHTML)
-    resourceNode.find('a').attr('href', resource['Website'])
-    resourceNode.find('h4').text(resource['Organization Name'])
-    resourceNode.find('.resource-description').text(resource['Brief Description'])
+    resourceNode.find('a').attr('href', resource['Website'].trim())
+    resourceNode.find('h3').text(resource['Organization Name'].trim())
+    resourceNode.find('.resource-description').text(resource['Brief Description'].trim())
+
+    if (resource['Tags'].length > 0) {
+      const tags = resource['Tags'].split(',').map(rawTag => rawTag.trim())
+      const tagContainer = resourceNode.find('.tags')
+      for (let tag of tags) {
+        tagContainer.append(jQuery(`<span class="tag purple-background">${tag}</span>`))
+      }
+    }
 
     jQuery('#resources-list').append(resourceNode)
   }
