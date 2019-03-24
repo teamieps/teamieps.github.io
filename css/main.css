@@ -164,6 +164,11 @@ body
     color: #7462e0;
 }
 
+a:hover
+{
+    color: #439bb1;
+}
+
 .white-grey-gradient-background
 {
     background: rgb(235,235,235);
@@ -472,6 +477,8 @@ h1
 .resource-item
 {
     flex-basis: 49%;
+
+    margin-bottom: 20px;
 }
 
 .resource-item h3
@@ -513,6 +520,7 @@ hr
 {
     /* display: none; */
     height: 0;
+    margin: 10px 0;
 
     transition: height .2s, opacity .2s;
     /* visibility: hidden; */
@@ -522,7 +530,24 @@ hr
 
 .resource-details-toggle-label
 {
+    padding: 3px;
+
     cursor: pointer;
+
+    opacity: .8;
+}
+
+.resource-details-toggle-label::after
+{
+    font-size: 80%;
+    /* content: ' '; */
+
+    content: ' ▼';
+}
+
+.resource-details-toggle-label:hover
+{
+    opacity: 1;
 }
 
 .resource-details-toggle
@@ -534,7 +559,7 @@ hr
 {
     display: block;
 
-    height: 20px;
+    height: auto;
     /* visibility: visible; */
 
     opacity: 1;

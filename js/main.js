@@ -104,7 +104,8 @@ jQuery('#stateSelectionDropdown').change(function (event) {
   jQuery('#jqvmap1_' + selectedState).click()
 })
 
-const resourceItemHTML = '<div class="resource-item"><a target="_blank"><h3></h3></a><div class="tags"></div><p class="resource-description"></p></div>'
+// const resourceItemHTML = '<div class="resource-item"><a target="_blank"><h3></h3></a><div class="tags"></div><p class="resource-description"></p></div>'
+const resourceItemHTML = '<div class="resource-item"><a target="_blank"><h3></h3></a><div class="tags"></div><p class="resource-description"></p><div><label class="resource-details-toggle-label purple-background">Show Details</label></div><input type="checkbox" class="resource-details-toggle"><div class="resource-details"></div></div>'
 
 const displayResources = function (stateCode) {
   const selectedStateCode = stateCode.toUpperCase(stateCode)
@@ -117,11 +118,47 @@ const displayResources = function (stateCode) {
   jQuery('#resources-list').empty()
 
   for (let resource of filteredResources) {
+    const thisResourceID = Math.random()
     let resourceNode = jQuery(resourceItemHTML)
     resourceNode.find('a').attr('href', resource['Website'].trim())
     resourceNode.find('h3').text(resource['Organization Name'].trim())
     resourceNode.find('.resource-description').text(resource['Brief Description'].trim())
 
+    // Construct Details Expansion
+
+    // const detailsComponents = [resource['Address'], resource['Phone Number'], resource['Email']]
+
+    // detailsComponents.map(s => s.trim()).filter(s => s.length > 0)
+
+    const resourceDetailsElements = []
+
+    if (resource['Website'].trim().length > 0) {
+      console.log(resource['Website'].match(/(https*:\/\/|^)([a-zA-Z0-9-.]+)/))
+      resourceDetailsElements.push(`<a href="${resource['Website']}" target="_blank">${resource['Website'].match(/(https*:\/\/|^)([a-zA-Z0-9-.]+)/)[2]}</a>`)
+    }
+
+    // The substituted value will be contained in the result variable
+    const rawAddress = resource['Address'].trim()
+    if (rawAddress.length > 0) {
+      resourceDetailsElements.push(`<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(rawAddress)}" target="_blank">${resource['Address'].trim().replace(/(\n|\n)/g, `<br>`)}</a>`)
+    }
+
+    // Parse and format phone numbers
+    const phoneNumbers = resource['Phone Number'].trim().replace(/(\.|-)/g, '').match(/\d{9,}/g) || []
+    const phoneNumbersHTML = phoneNumbers.sort().map(number => `<a href="tel:+1${number}" title="Call this resource">${number.replace(/1?(\d{3})(\d{3})(\d{4})/, '($1) $2-$3')}</a>`).join(', ')
+    if (phoneNumbers.length > 0) {
+      resourceDetailsElements.push(phoneNumbersHTML)
+    }
+
+    const resourceDetailsHTML = resourceDetailsElements.join('<br>')
+
+    resourceNode.find('.resource-details').html(resourceDetailsHTML)
+
+    // Configure checkbox
+    resourceNode.find('[type="checkbox"]').attr('id', thisResourceID + 'checkbox')
+    resourceNode.find('label').attr('for', thisResourceID + 'checkbox')
+
+    // Configure tags
     if (resource['Tags'].length > 0) {
       const tags = resource['Tags'].split(',').map(rawTag => rawTag.trim())
       const tagContainer = resourceNode.find('.tags')
