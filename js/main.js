@@ -134,7 +134,7 @@ const displayResources = function (stateCode) {
 
     if (resource['Website'].trim().length > 0) {
       console.log(resource['Website'].match(/(https*:\/\/|^)([a-zA-Z0-9-.]+)/))
-      resourceDetailsElements.push(`<a href="${resource['Website']}" target="_blank">${resource['Website'].match(/(https*:\/\/|^)([a-zA-Z0-9-.]+)/)[2]}</a>`)
+      resourceDetailsElements.push(`<a href="${resource['Website']}" target="_blank">${resource['Website'].match(/(https*:\/\/|^)(www\.)*([a-zA-Z0-9-.]+)/)[3]}</a>`)
     }
 
     // The substituted value will be contained in the result variable
