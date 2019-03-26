@@ -3190,5 +3190,17 @@ var resourcesDatabase = [
     'Additional Information': '',
     'Notes': '',
     'Tags': ''
+  },
+  {
+    'State': 'CA',
+    'Organization Name': 'Parents Helping Parents',
+    'Website': 'https://www.php.com',
+    'Address': '1400 Parkmoor Av Ste 100, San Jose, CA 95126',
+    'Phone Number': '855-727-5775',
+    'Email': 'info@php.com',
+    'Brief Description': 'Parents Helping Parents empowers parents of children with special needs. PHP supports parents to address their concerns and identify the resources their children need. PHP has a comprehensive database of California-specific special education resources.',
+    'Additional Information': '',
+    'Notes': '',
+    'Tags': ''
   }
 ]
