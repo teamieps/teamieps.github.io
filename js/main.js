@@ -112,7 +112,24 @@ const displayResources = function (stateCode) {
   const selectedStateName = statesDatabase[selectedStateCode]
   jQuery('#state-name').text(selectedStateName)
 
-  const filteredResources = resourcesDatabase.filter(entry => entry.State === selectedStateCode)
+  let filteredResources = resourcesDatabase.filter(entry => entry.State === selectedStateCode)
+
+  filteredResources = filteredResources.map(function (thisResource) {
+    thisResource.Distance = 0
+    if (userPosition) {
+      thisResource.Distance = distanceCalculator(userPosition.latitude, userPosition.longitude, thisResource.Latitude, thisResource.Longitude)
+    }
+    return thisResource
+  }).sort(function compare (a, b) {
+    // console.log(a.Distance, b.Distance)
+    if (a.Distance < b.Distance) {
+      return -1
+    }
+    if (a.Distance > b.Distance) {
+      return 1
+    }
+    return 0
+  })
 
   // Delete existing elements
   jQuery('#resources-list').empty()
@@ -123,12 +140,11 @@ const displayResources = function (stateCode) {
     resourceNode.find('a').attr('href', resource['Website'].trim())
     resourceNode.find('h3').text(resource['Organization Name'].trim())
     resourceNode.find('.resource-description').text(resource['Brief Description'].trim())
+    if (resource.Distance > 0) {
+      resourceNode.find('.tags').after(`<p>Distance: ${resource.Distance.toFixed(0)} miles</p>`)
+    }
 
     // Construct Details Expansion
-
-    // const detailsComponents = [resource['Address'], resource['Phone Number'], resource['Email']]
-
-    // detailsComponents.map(s => s.trim()).filter(s => s.length > 0)
 
     const resourceDetailsElements = []
 
@@ -171,4 +187,39 @@ const displayResources = function (stateCode) {
   }
 
   console.log(filteredResources)
+}
+
+let userPosition
+
+jQuery('#distance-sort').click(function () {
+  jQuery('#distance-sort').text('Sorting…')
+  navigator.geolocation.getCurrentPosition(function (position) {
+    userPosition = position.coords
+    displayResources(jQuery('#stateSelectionDropdown').val())
+    jQuery('#distance-sort').text('Sorted by distance from you')
+  })
+})
+
+function distanceCalculator (lat1, lon1, lat2, lon2, unit) {
+  if ([typeof (lat1), typeof (lon1), typeof (lat2), typeof (lon2)].some(type => type !== 'number')) {
+    return 0
+  }
+  if ((lat1 === lat2) && (lon1 === lon2)) {
+    return 0
+  } else {
+    var radlat1 = Math.PI * lat1 / 180
+    var radlat2 = Math.PI * lat2 / 180
+    var theta = lon1 - lon2
+    var radtheta = Math.PI * theta / 180
+    var dist = Math.sin(radlat1) * Math.sin(radlat2) + Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta)
+    if (dist > 1) {
+      dist = 1
+    }
+    dist = Math.acos(dist)
+    dist = dist * 180 / Math.PI
+    dist = dist * 60 * 1.1515
+    if (unit === 'K') { dist = dist * 1.609344 }
+    if (unit === 'N') { dist = dist * 0.8684 }
+    return dist
+  }
 }

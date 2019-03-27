@@ -565,6 +565,20 @@ hr
     opacity: 1;
 }
 
+#resource-display-header-container
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#distance-sort
+{
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
 
 
 
@@ -595,6 +609,8 @@ hr
         flex-basis: 100%;
     }
 }
+
+
 
 
 
