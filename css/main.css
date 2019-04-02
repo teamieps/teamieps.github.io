@@ -585,6 +585,11 @@ hr
     opacity: 1;
 }
 
+.capitalize
+{
+    text-transform: capitalize;
+}
+
 #resource-display-header-container
 {
     display: flex;

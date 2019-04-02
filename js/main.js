@@ -57,7 +57,6 @@ let populateStateSelectionDropdown = function () {
 
 let setUpUSAMap = function () {
   const statesWithResources = Object.keys(findFesourcesPerState())
-  console.log(statesWithResources)
 
   let stateColors = {}
   for (let stateCode of statesWithResources) {
@@ -150,10 +149,18 @@ const prepareResources = function (filter) {
     }
     return thisResource
   }).sort(function compare (a, b) {
+    // Sort by distance
     if (a.Distance < b.Distance) {
       return -1
     }
     if (a.Distance > b.Distance) {
+      return 1
+    }
+    // Sort by name
+    if (a['Organization Name'] < b['Organization Name']) {
+      return -1
+    }
+    if (a['Organization Name'] > b['Organization Name']) {
       return 1
     }
     return 0
@@ -218,8 +225,18 @@ const displayResources = function (resources) {
   }
 
   if (userPosition) {
-    jQuery('#resources-display .button.find-resources-trigger').text('Showing resources sorted by distance from you').removeClass('button purple-background')
-    jQuery("#resources-description").text('Near You')
+    jQuery('#resources-display .button.find-resources-trigger').text('resources sorted by distance from you').removeClass('button purple-background')
+    jQuery('#resources-description').text('Near You')
+  }
+
+  if (jQuery('#stateSelectionDropdown').val() && jQuery('#stateSelectionDropdown').val() !== 'select-a-state') {
+    const stateCode = jQuery('#stateSelectionDropdown').val().toUpperCase()
+
+    jQuery('#resources-description').text(`in ${statesDatabase[stateCode]}`)
+  }
+
+  if (!userPosition && (!jQuery('#stateSelectionDropdown').val() || jQuery('#stateSelectionDropdown').val() === 'select-a-state')) {
+    jQuery('#resources-description').text('Nationwide')
   }
 }
 
