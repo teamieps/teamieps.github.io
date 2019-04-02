@@ -83,7 +83,13 @@ let setUpUSAMap = function () {
       if (jQuery('#stateSelectionDropdown').val() !== code) {
         jQuery('#stateSelectionDropdown').val(code)
       }
-      displayResources(code)
+      const resources = prepareResources({ state: code })
+      displayResources(resources)
+    },
+    onRegionDeselect: function () {
+      jQuery('#stateSelectionDropdown').val('select-a-state')
+      const resources = prepareResources()
+      displayResources(resources)
     },
     onRegionOver: ignoreUnsupportedStates,
     onLabelShow: function (event, label, code) {
@@ -104,24 +110,40 @@ jQuery('#stateSelectionDropdown').change(function (event) {
   jQuery('#jqvmap1_' + selectedState).click()
 })
 
-// const resourceItemHTML = '<div class="resource-item"><a target="_blank"><h3></h3></a><div class="tags"></div><p class="resource-description"></p></div>'
 const resourceItemHTML = '<div class="resource-item"><a target="_blank"><h3></h3></a><div class="tags"></div><p class="resource-description"></p><div><label class="resource-details-toggle-label purple-background">Show Details</label></div><input type="checkbox" class="resource-details-toggle"><div class="resource-details"></div></div>'
 
-const displayResources = function (stateCode) {
-  const selectedStateCode = stateCode.toUpperCase(stateCode)
-  const selectedStateName = statesDatabase[selectedStateCode]
-  jQuery('#state-name').text(selectedStateName)
+// const displayResources = function (stateCode) {
+//   const resources = prepareResources({state: stateCode})
+//   displayResources(resources)
+// }
 
-  let filteredResources = resourcesDatabase.filter(entry => entry.State === selectedStateCode)
+jQuery('#show-resources-button').click(function () {
+  findUserPosition(function () {
+    const resources = prepareResources()
+    displayResources(resources)
+  })
+})
 
+let userPosition
+
+const prepareResources = function (filter) {
+  let filteredResources = resourcesDatabase
+
+  // Apply state filter
+  if (filter && filter.state) {
+    const selectedStateCode = filter.state.toUpperCase()
+    filteredResources = resourcesDatabase.filter(entry => entry.State === selectedStateCode)
+  }
+
+  // Add distance information
   filteredResources = filteredResources.map(function (thisResource) {
     thisResource.Distance = 0
+
     if (userPosition) {
       thisResource.Distance = distanceCalculator(userPosition.latitude, userPosition.longitude, thisResource.Latitude, thisResource.Longitude)
     }
     return thisResource
   }).sort(function compare (a, b) {
-    // console.log(a.Distance, b.Distance)
     if (a.Distance < b.Distance) {
       return -1
     }
@@ -131,10 +153,14 @@ const displayResources = function (stateCode) {
     return 0
   })
 
+  return filteredResources
+}
+
+const displayResources = function (resources) {
   // Delete existing elements
   jQuery('#resources-list').empty()
 
-  for (let resource of filteredResources) {
+  for (let resource of resources) {
     const thisResourceID = Math.random()
     let resourceNode = jQuery(resourceItemHTML)
     resourceNode.find('a').attr('href', resource['Website'].trim())
@@ -143,13 +169,12 @@ const displayResources = function (stateCode) {
     if (resource.Distance > 0) {
       resourceNode.find('.tags').after(`<p>Distance: ${resource.Distance.toFixed(0)} miles</p>`)
     }
+    resourceNode.find('.tags').after(`<p>State: ${resource.State}</p>`)
 
     // Construct Details Expansion
-
     const resourceDetailsElements = []
 
     if (resource['Website'].trim().length > 0) {
-      console.log(resource['Website'].match(/(https*:\/\/|^)([a-zA-Z0-9-.]+)/))
       resourceDetailsElements.push(`<a href="${resource['Website']}" target="_blank">${resource['Website'].match(/(https*:\/\/|^)(www\.)*([a-zA-Z0-9-.]+)/)[3]}</a>`)
     }
 
@@ -185,16 +210,24 @@ const displayResources = function (stateCode) {
 
     jQuery('#resources-list').append(resourceNode)
   }
-
-  console.log(filteredResources)
 }
 
-let userPosition
+const findUserPosition = function (callback) {
+  callback = callback || function () {}
+  if (userPosition) {
+    return callback()
+  }
+
+  navigator.geolocation.getCurrentPosition(function (position) {
+    userPosition = position.coords
+    return callback()
+  })
+}
 
 jQuery('#distance-sort').click(function () {
   jQuery('#distance-sort').text('Sorting…')
-  navigator.geolocation.getCurrentPosition(function (position) {
-    userPosition = position.coords
+
+  findUserPosition(function () {
     displayResources(jQuery('#stateSelectionDropdown').val())
     jQuery('#distance-sort').text('Sorted by distance from you')
   })
