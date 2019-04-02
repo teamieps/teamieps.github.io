@@ -117,8 +117,14 @@ const resourceItemHTML = '<div class="resource-item"><a target="_blank"><h3></h3
 //   displayResources(resources)
 // }
 
-jQuery('#show-resources-button').click(function () {
+jQuery('.find-resources-trigger').click(function () {
   findUserPosition(function () {
+    // Animate
+    jQuery([document.documentElement, document.body]).animate({
+      scrollTop: jQuery('#resources-display').offset().top - 150
+    }, 500)
+
+    // Update resources
     const resources = prepareResources()
     displayResources(resources)
   })

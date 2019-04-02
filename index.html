@@ -38,23 +38,24 @@
           <h1>Special Education Resources</h1>
         </div>
         <div>
-          <h2 class="button purple-background">
-            About
-          </h2>
+          <a href="#about" class="no-underline">
+            <h2 class="button purple-background hover-darken">
+              About
+            </h2>
+          </a>
         </div>
       </nav>
     </header>
     <div id="header-spacer"></div>
 
     <div class="full-width purple-background main-background shadow position-relative" id="hero">
-      <img id="hero-image" class="margin-right">
       <div class="width-wrapper-tight hero-text">
         <h1>
-          Get Connected!
+          Education Resources Near&nbsp;You
         </h1>
-        <p>
-          Find special education resources near you!
-        </p>
+        <div class="button purple-background find-resources-trigger hover-darken" style="font-size: 120%;" id="find-resources-button">
+          Find Special Education Resources Near Me
+        </div>
       </div>
     </div>
 
@@ -94,7 +95,7 @@
       <!-- <div class="full-width"> <div class="flex step-title-container"> <h4 class="step-number purple-background">Step Two</h4> <h4 class="step-title purple-text">What resources are you looking for?</h4> </div> <p style="align: center;"> This section
       will be refined once we have more information about the types of resources in the database. </p> <div id="usa-map"></div> </div> -->
 
-      <div class="full-width">
+      <div class="full-width" id="resources-display">
         <!-- <div class="flex step-title-container"> <h4 class="step-number purple-background">Step Two</h4> <h4 class="step-title purple-text">What resources do you need?</h4> </div> -->
         <div class="width-wrapper-tight white-background"></div>
         <div class="width-wrapper-tight white-background results-box">
@@ -116,7 +117,7 @@
 
       <footer class="full-width purple-background">
         <div style="display: flex;">
-          <div style="flex: 50%; margin: 20px;">
+          <div style="flex: 50%; margin: 20px;" id="about">
             <h2 style="text-decoration: underline;">ABOUT US</h2>
             <p>
               SpecialEducationResources.org is a free and not-for-profit tool created by a group of students at Princeton University. This website is designed to help families connect with special education resources near them.

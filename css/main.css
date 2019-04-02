@@ -149,18 +149,17 @@ body
 
 .main-background
 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./../img/students-working-and-studying-flatlay.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
+
     height: 50%;
+
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(./../img/students-working-and-studying-flatlay.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.hero-text
-{
 
-}
 
 .white-background
 {
@@ -201,7 +200,20 @@ a:hover
 {
     padding: 5px 20px;
 
+    cursor: pointer;
+
     border-radius: 20px;
+}
+
+
+a.no-underline
+{
+    text-decoration: none;
+}
+
+.hover-darken:hover
+{
+    filter: brightness(90%);
 }
 
 .position-relative
@@ -586,6 +598,11 @@ hr
 {
     cursor: pointer;
     text-transform: capitalize;
+}
+
+#find-resources-button
+{
+    display: inline-block;
 }
 
 
