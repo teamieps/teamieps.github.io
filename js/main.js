@@ -112,13 +112,13 @@ jQuery('#stateSelectionDropdown').change(function (event) {
 
 const resourceItemHTML = '<div class="resource-item"><a target="_blank"><h3></h3></a><div class="tags"></div><p class="resource-description"></p><div><label class="resource-details-toggle-label purple-background">Show Details</label></div><input type="checkbox" class="resource-details-toggle"><div class="resource-details"></div></div>'
 
-// const displayResources = function (stateCode) {
-//   const resources = prepareResources({state: stateCode})
-//   displayResources(resources)
-// }
-
 jQuery('.find-resources-trigger').click(function () {
+  const clickTarget = $(this)
+  const originalText = $(this).text()
+  $(this).text('Searching for resources near you…')
   findUserPosition(function () {
+    clickTarget.text(originalText)
+
     // Animate
     jQuery([document.documentElement, document.body]).animate({
       scrollTop: jQuery('#resources-display').offset().top - 150
@@ -216,6 +216,11 @@ const displayResources = function (resources) {
 
     jQuery('#resources-list').append(resourceNode)
   }
+
+  if (userPosition) {
+    jQuery('#resources-display .button.find-resources-trigger').text('Showing resources sorted by distance from you').removeClass('button purple-background')
+    jQuery("#resources-description").text('Near You')
+  }
 }
 
 const findUserPosition = function (callback) {
@@ -237,6 +242,11 @@ jQuery('#distance-sort').click(function () {
     displayResources(jQuery('#stateSelectionDropdown').val())
     jQuery('#distance-sort').text('Sorted by distance from you')
   })
+})
+
+// Display all resources when page loads
+jQuery(document).ready(function () {
+  displayResources(prepareResources())
 })
 
 function distanceCalculator (lat1, lon1, lat2, lon2, unit) {

@@ -599,9 +599,13 @@ hr
     text-transform: capitalize;
 }
 
-#find-resources-button
+#hero .button
 {
+    font-size: 130%;
+
     display: inline-block;
+
+    text-transform: capitalize;
 }
 
 
