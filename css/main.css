@@ -151,14 +151,13 @@ body
 {
     position: relative;
 
-    height: 50%;
+    height: 600px;
 
     background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(./../img/students-working-and-studying-flatlay.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-
 
 
 .white-background
