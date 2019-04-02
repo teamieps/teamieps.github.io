@@ -147,10 +147,19 @@ body
     background-color: #7462e0;
 }
 
-.purple-gradient-background
+.main-background
 {
-    background: #7462e0;
-    background: linear-gradient(0deg, #7462e0 0%, #9587ec 100%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./../img/students-working-and-studying-flatlay.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 50%;
+}
+
+.hero-text
+{
+
 }
 
 .white-background
