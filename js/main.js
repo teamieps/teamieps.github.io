@@ -6,7 +6,55 @@ jQuery(document).ready(function () {
   // findUniqueStates()
   setUpUSAMap()
   populateStateSelectionDropdown()
+  populateResourceCategoriesList()
 })
+
+// checked items are jQuery('#categories-list input:checked').toArray().map(item => $(item).attr('id'))
+
+let populateResourceCategoriesList = function () {
+  const categoriesObject = {}
+  for (let thisResource of resourcesDatabase) {
+    let thisResourceCategories = thisResource.Tags.trim().split(', ')
+    thisResourceCategories = thisResourceCategories.map(cat => cat.trim().toLowerCase())
+    for (let thisCategory of thisResourceCategories) {
+      if (thisCategory.length > 0) {
+        if (categoriesObject[thisCategory]) {
+          categoriesObject[thisCategory]++
+        } else {
+          categoriesObject[thisCategory] = 1
+        }
+      }
+    }
+  }
+
+  const categoriesArray = Object.keys(categoriesObject).map(function (category) {
+    return {
+      name: category,
+      count: categoriesObject[category]
+    }
+  }).sort(function (a, b) {
+    if (a.count < b.count) {
+      return -1
+    }
+    if (a.count > b.count) {
+      return 1
+    }
+    if (a.name < b.name) {
+      return -1
+    }
+    if (a.name > b.name) {
+      return 1
+    }
+    return 0
+  }).reverse()
+
+  const categoriesListElement = $('#categories-list')
+  for (let thisCategory of categoriesArray) {
+    const thisCategoryShortName = thisCategory.name.split(' ').join('')
+    const thisCategoryHTML = `<li><input type='checkbox' id='${thisCategoryShortName}'><label for='${thisCategoryShortName}'>${thisCategory.name} (${thisCategory.count})</label></li>`
+    categoriesListElement.append(thisCategoryHTML)
+  }
+}
 
 let findFesourcesPerState = function () {
   const resourcesPerState = resourcesDatabase.reduce(function (accumulator, currentValue) {
@@ -291,7 +339,7 @@ function distanceCalculator (lat1, lon1, lat2, lon2, unit) {
 }
 
 // When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+function topFunction () {
+  document.body.scrollTop = 0
+  document.documentElement.scrollTop = 0
 }

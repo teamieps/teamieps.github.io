@@ -77,106 +77,110 @@
       </div>
     </div>
 
-    <div class="full-width">
-      <!-- <div class="flex step-title-container"> <h4 class="step-number purple-background">Step One</h4> <h4 class="step-title purple-text">Where are you?</h4> </div> -->
-      <label for="stateSelectionDropdown" class="purple-text text-center display-block">
-        Select your state from the map below or the drop-down menu. We'll show you resources near you.
-      </label>
-
-      <select id="stateSelectionDropdown">
-        <option label="Select a state…" disabled="disabled" value="select-a-state"></select>
-
-        <div id="usa-map"></div>
-      </div>
-
-      <!-- <div class="full-width"> <div class="flex step-title-container"> <h4 class="step-number purple-background">Step Two</h4> <h4 class="step-title purple-text">What resources are you looking for?</h4> </div> <p style="align: center;"> This section
-      will be refined once we have more information about the types of resources in the database. </p> <div id="usa-map"></div> </div> -->
-
-      <div class="full-width" id="resources-display">
-        <!-- <div class="flex step-title-container"> <h4 class="step-number purple-background">Step Two</h4> <h4 class="step-title purple-text">What resources do you need?</h4> </div> -->
-        <div class="width-wrapper-tight white-background"></div>
-        <div class="width-wrapper-tight white-background results-box">
-          <div id="resource-display-header-container">
-            <h2>
-              Special Education Resources
-              <span id="resources-description">Nationwide</span>
-            </h2>
-            <div class="button purple-background find-resources-trigger hover-darken capitalize">
-              Sort Resources By Distance From You
+    <div class="full-width" id="resources-display">
+      <!-- <div class="flex step-title-container"> <h4 class="step-number purple-background">Step Two</h4> <h4 class="step-title purple-text">What resources do you need?</h4> </div> -->
+      <div class="width-wrapper-tight white-background"></div>
+      <div class="width-wrapper-tight white-background results-box">
+        <div id="resource-display-header-container">
+          <h2>
+            Special Education Resources
+            <span id="resources-description">Nationwide</span>
+          </h2>
+          <div class="button purple-background find-resources-trigger hover-darken capitalize">
+            Sort Resources By Distance From You
+          </div>
+        </div>
+        <hr>
+        <div id="resources-filters-container">
+          <h3>
+            Filter Resources
+          </h3>
+          <div class="flex-col">
+            <div>
+              <h4>Filter Resources by Location</h4>
+              <select id="stateSelectionDropdown">
+                <option label="Nationwide" disabled="disabled" value="select-a-state"></option>
+              </select>
+              <div id="usa-map"></div>
+            </div>
+            <div>
+              <h4>Filter Resources by Category</h4>
+              <ul class="checkbox-list" id="categories-list"></ul>
             </div>
           </div>
-          <hr>
-          <div id="resources-list">
-            <!-- <p>Select a state to see resources</p> -->
-            <!-- <div class="resource-item"> <a target="_blank" href="http://www.example.com"> <h3>An Example Organisation</h3> </a> <div class="tags"> <span class="tag purple-background">An awesome tag</span></div> <p class="resource-description">Awesome
-            description</p> <div> <label for="abc123" class="resource-details-toggle-label purple-background">Show Details</label> </div> <input type="checkbox" id="abc123" class="resource-details-toggle"> <div class="resource-details"> Awesome Stuff </div>
-            </div> -->
-          </div>
+        </div>
+        <hr>
+        <div id="resources-list">
+          <!-- <p>Select a state to see resources</p> -->
+          <!-- <div class="resource-item"> <a target="_blank" href="http://www.example.com"> <h3>An Example Organisation</h3> </a> <div class="tags"> <span class="tag purple-background">An awesome tag</span></div> <p class="resource-description">Awesome
+          description</p> <div> <label for="abc123" class="resource-details-toggle-label purple-background">Show Details</label> </div> <input type="checkbox" id="abc123" class="resource-details-toggle"> <div class="resource-details"> Awesome Stuff </div>
+          </div> -->
         </div>
       </div>
+    </div>
 
-      <footer class="full-width purple-background">
-        <div style="display: flex;">
-          <div style="flex: 50%; margin: 20px;" id="about">
-            <h2 style="text-decoration: underline;">ABOUT US</h2>
-            <p>
-              SpecialEducationResources.org is a free and not-for-profit tool created by a group of students at Princeton University. This website is designed to help families connect with special education resources near them.
-            </p>
-            <p>
-              This tool was built by Demi Zhang, Eric Guerci, Kyle Barnes, and
-              <a href="https://www.sebthedev.com">Sebastian Hallum Clarke</a>
-              through Princeton University's
-              <a href="https://tigerchallenge.princeton.edu">Tiger Challenge</a>
-              design thinking social innovation program. The team was advised by
-              <!-- <span style="display:none">Hal Friedlander and Matthew Korobkin of the <a href="http://www.publicconsultinggroup.com">Public Consulting Group</a> and</span> -->
-              Rafe Steinhauer of the
-              <a href="https://kellercenter.princeton.edu">Keller Center</a>.
-            </p>
-          </div>
-          <div style="flex: 50%; margin: 20px;">
-            <h2 style="text-decoration: underline; text-transform: uppercase;">Don't see your organisation?</h2>
-            <p>We'd love to include as many high-quality resources as possible. Please submit any additional resources through
-              <a href="https://forms.gle/AsbGDJdLxZ37Co1d8" target="_blank">this simple form</a>.</p>
-          </div>
+    <footer class="full-width purple-background">
+      <div style="display: flex;">
+        <div style="flex: 50%; margin: 20px;" id="about">
+          <h2 style="text-decoration: underline;">ABOUT US</h2>
+          <p>
+            SpecialEducationResources.org is a free and not-for-profit tool created by a group of students at Princeton University. This website is designed to help families connect with special education resources near them.
+          </p>
+          <p>
+            This tool was built by Demi Zhang, Eric Guerci, Kyle Barnes, and
+            <a href="https://www.sebthedev.com">Sebastian Hallum Clarke</a>
+            through Princeton University's
+            <a href="https://tigerchallenge.princeton.edu">Tiger Challenge</a>
+            design thinking social innovation program. The team was advised by
+            <!-- <span style="display:none">Hal Friedlander and Matthew Korobkin of the <a href="http://www.publicconsultinggroup.com">Public Consulting Group</a> and</span> -->
+            Rafe Steinhauer of the
+            <a href="https://kellercenter.princeton.edu">Keller Center</a>.
+          </p>
         </div>
-        <div style="text-align: center; margin-bottom: 0; padding-bottom: 0.5%;">
-          <button onclick="topFunction()" id="topBtn" class="button white-background hover-darken">
-            Back to Top
-          </button>
-          <p>© TeamIEPs
+        <div style="flex: 50%; margin: 20px;">
+          <h2 style="text-decoration: underline; text-transform: uppercase;">Don't see your organisation?</h2>
+          <p>We'd love to include as many high-quality resources as possible. Please submit any additional resources through
+            <a href="https://forms.gle/AsbGDJdLxZ37Co1d8" target="_blank">this simple form</a>.</p>
+        </div>
+      </div>
+      <div style="text-align: center; margin-bottom: 0; padding-bottom: 0.5%;">
+        <button onclick="topFunction()" id="topBtn" class="button white-background hover-darken">
+          Back to Top
+        </button>
+        <p>© TeamIEPs
           <script type="text/javascript">
             document.write(new Date().getFullYear());
           </script>
-          </p>
-        </div>
-      </footer>
+        </p>
+      </div>
+    </footer>
 
-      <!-- Below this line is javascript content. Don't put any visual elements below this line. -->
+    <!-- Below this line is javascript content. Don't put any visual elements below this line. -->
 
-      <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-      <script>
-        window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
-      </script>
-      <script type="text/javascript" src="./js/vendor/jquery.vmap.min.js"></script>
-      <script type="text/javascript" src="./js/vendor/jquery.vmap.usa.js" charset="utf-8"></script>
-      <script src="js/plugins.js"></script>
-      <script src="js/resourcesDatabase.js"></script>
-      <script src="js/statesDatabase.js"></script>
-      <script src="js/main.js"></script>
+    <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+      window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+    </script>
+    <script type="text/javascript" src="./js/vendor/jquery.vmap.min.js"></script>
+    <script type="text/javascript" src="./js/vendor/jquery.vmap.usa.js" charset="utf-8"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/resourcesDatabase.js"></script>
+    <script src="js/statesDatabase.js"></script>
+    <script src="js/main.js"></script>
 
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-136948011-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-          dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-136948011-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-        gtag('config', 'UA-136948011-1');
-      </script>
+      gtag('config', 'UA-136948011-1');
+    </script>
 
-    </body>
+  </body>
 
-  </html>
+</html>
