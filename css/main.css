@@ -536,6 +536,7 @@ ul.checkbox-list li:hover
     margin-left: 5px;
 
     cursor: pointer;
+    user-select: none;
     text-transform: capitalize;
 }
 
@@ -583,7 +584,8 @@ hr
 
 .resource-details
 {
-    /* display: none; */
+    display: none;
+
     height: 0;
     margin: 10px 0;
 
@@ -598,6 +600,7 @@ hr
     padding: 3px;
 
     cursor: pointer;
+    user-select: none;
 
     opacity: .8;
 }

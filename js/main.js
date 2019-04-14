@@ -1,6 +1,8 @@
 let jQuery = window.jQuery
 
 const resourcesDatabases = resourcesDatabase
+let userPosition
+let resourcesFilter = {}
 
 jQuery(document).ready(function () {
   // findUniqueStates()
@@ -11,11 +13,26 @@ jQuery(document).ready(function () {
 
 // checked items are jQuery('#categories-list input:checked').toArray().map(item => $(item).attr('id'))
 
+jQuery('#categories-list').on('change', 'input', function (event) {
+  const selectedCategories = jQuery('#categories-list input:checked').toArray().map(item => jQuery(item).attr('id'))
+
+  if (selectedCategories.length > 0) {
+    resourcesFilter.categories = selectedCategories
+  } else {
+    delete resourcesFilter.categories
+  }
+
+  const resources = prepareResources(resourcesFilter)
+  displayResources(resources)
+})
+
+// Populate the list of resource categories
 let populateResourceCategoriesList = function () {
   const categoriesObject = {}
   for (let thisResource of resourcesDatabase) {
     let thisResourceCategories = thisResource.Tags.trim().split(', ')
     thisResourceCategories = thisResourceCategories.map(cat => cat.trim().toLowerCase())
+    thisResource.CleanedTags = thisResourceCategories.map(cat => cat.split(' ').join(''))
     for (let thisCategory of thisResourceCategories) {
       if (thisCategory.length > 0) {
         if (categoriesObject[thisCategory]) {
@@ -56,7 +73,7 @@ let populateResourceCategoriesList = function () {
   }
 }
 
-let findFesourcesPerState = function () {
+let findResourcesPerState = function () {
   const resourcesPerState = resourcesDatabase.reduce(function (accumulator, currentValue) {
     if (currentValue.State) {
       if (accumulator[currentValue.State.toLowerCase()]) {
@@ -71,7 +88,7 @@ let findFesourcesPerState = function () {
 }
 
 let populateStateSelectionDropdown = function () {
-  const statesCodesWithResources = Object.keys(findFesourcesPerState())
+  const statesCodesWithResources = Object.keys(findResourcesPerState())
   let selectElement = document.getElementById('stateSelectionDropdown')
 
   const statesWithResources = statesCodesWithResources.map(function (stateCode) {
@@ -104,7 +121,7 @@ let populateStateSelectionDropdown = function () {
 }
 
 let setUpUSAMap = function () {
-  const statesWithResources = Object.keys(findFesourcesPerState())
+  const statesWithResources = Object.keys(findResourcesPerState())
 
   let stateColors = {}
   for (let stateCode of statesWithResources) {
@@ -130,12 +147,15 @@ let setUpUSAMap = function () {
       if (jQuery('#stateSelectionDropdown').val() !== code) {
         jQuery('#stateSelectionDropdown').val(code)
       }
-      const resources = prepareResources({ state: code })
+      resourcesFilter.state = code
+      const resources = prepareResources(resourcesFilter)
       displayResources(resources)
     },
     onRegionDeselect: function () {
       jQuery('#stateSelectionDropdown').val('select-a-state')
-      const resources = prepareResources()
+      delete resourcesFilter.state
+      console.log(resourcesFilter)
+      const resources = prepareResources(resourcesFilter)
       displayResources(resources)
     },
     onRegionOver: ignoreUnsupportedStates,
@@ -145,7 +165,7 @@ let setUpUSAMap = function () {
   })
 }
 
-const statesWithResources = Object.keys(findFesourcesPerState())
+const statesWithResources = Object.keys(findResourcesPerState())
 const ignoreUnsupportedStates = function (event, code, region) {
   if (!statesWithResources.includes(code)) {
     event.preventDefault()
@@ -154,7 +174,17 @@ const ignoreUnsupportedStates = function (event, code, region) {
 
 jQuery('#stateSelectionDropdown').change(function (event) {
   const selectedState = jQuery('#stateSelectionDropdown').val()
-  jQuery('#jqvmap1_' + selectedState).click()
+
+  switch (selectedState) {
+    case 'select-a-state':
+      console.log('select-a-state')
+      jQuery('#jqvmap1_nj').click()
+      jQuery('#jqvmap1_ca').click()
+      jQuery('#jqvmap1_ca').click()
+      break
+    default:
+      jQuery('#jqvmap1_' + selectedState).click()
+  }
 })
 
 const resourceItemHTML = '<div class="resource-item"><a target="_blank"><h3></h3></a><div class="tags"></div><p class="resource-description"></p><div><label class="resource-details-toggle-label purple-background">Show Details</label></div><input type="checkbox" class="resource-details-toggle"><div class="resource-details"></div></div>'
@@ -172,12 +202,10 @@ jQuery('.find-resources-trigger').click(function () {
     }, 500)
 
     // Update resources
-    const resources = prepareResources()
+    const resources = prepareResources(resourcesFilter)
     displayResources(resources)
   })
 })
-
-let userPosition
 
 const prepareResources = function (filter) {
   let filteredResources = resourcesDatabase
@@ -186,6 +214,20 @@ const prepareResources = function (filter) {
   if (filter && filter.state) {
     const selectedStateCode = filter.state.toUpperCase()
     filteredResources = resourcesDatabase.filter(entry => entry.State === selectedStateCode)
+  }
+
+  // Apply categories filter
+  if (filter && filter.categories && filter.categories.length > 0) {
+    filteredResources = filteredResources.filter(function (entry) {
+      if (!entry.CleanedTags || entry.CleanedTags.length === 0) {
+        return false
+      }
+
+      return filter.categories.some(function (thisCategory) {
+        console.log(thisCategory, entry.CleanedTags)
+        return (entry.CleanedTags.indexOf(thisCategory) > -1)
+      })
+    })
   }
 
   // Add distance information
@@ -288,6 +330,7 @@ const displayResources = function (resources) {
   }
 }
 
+// Find the position of the user and save it in the browser
 const findUserPosition = function (callback) {
   callback = callback || function () {}
   if (userPosition) {
