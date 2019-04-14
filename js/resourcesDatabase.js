@@ -1047,7 +1047,7 @@ var resourcesDatabase = [
     'Brief Description': 'The Florida Diagnostic & Learning Resources System (FDLRS) provides diagnostic, instructional, and technology support services to district exceptional education programs and families of students with disabilities. Service centers include 19 centers that directly serve school districts in the areas of Child Find, Parent Services, Human Resource Development (HRD), and Technology. In addition, the FDLRS Network also includes 6 Multi-disciplinary Centers who focus on in-depth evaluations and several statewide projects offering specialized services.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': 'early childhood, techonolgy,  professional development'
+    'Tags': 'early childhood, technology,  professional development'
   },
   {
     'State': 'FL',
@@ -2587,7 +2587,7 @@ var resourcesDatabase = [
     'Brief Description': 'The Epilepsy Foundation of Virginia provides these services for Virginians with epilepsy: training sessions for professionals, families, friends, and colleagues. public education programs with puppets for schools and talk shows on radio and television. one time medication assistance. transportation assistance. assistance with general epilepsy-related emergencies.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'epilepsy'
   },
   {
     'State': 'VA',
@@ -2657,7 +2657,7 @@ var resourcesDatabase = [
     'Brief Description': 'The ACB determined that we could have more influence over how services are delivered by working directly with service providers. We maintain ongoing efforts to create and implement programs that will lead to accreditation for agencies who provide services to people who are blind or visually impaired. We have served on the boards of directors of national organizations such as National Industries for the Blind, the National Accreditation Council of Agencies Serving People Who Are Blind and the American Foundation for the Blind, and we have used our influence to shape the policies those organizations have developed.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'blindness'
   },
   {
     'State': 'VA',
@@ -2699,7 +2699,7 @@ var resourcesDatabase = [
     'Brief Description': 'DBVI is an agency of the Commonwealth of Virginia that is dedicated to its mission of providing services and resources which empower Virginians who are blind, vision impaired or deafblind to achieve their desired levels of employment, education, and personal independence.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'blindness'
   },
   {
     'State': 'VA',
@@ -2713,7 +2713,7 @@ var resourcesDatabase = [
     'Brief Description': 'The Virginia Department for the Deaf and Hard of Hearing (VDDHH) promotes accessible communication so that persons who are Deaf and Hard of Hearing may full participate in programs, services and opportunities throughout the Commonwealth.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'deafness'
   },
   {
     'State': 'VA',
@@ -2741,7 +2741,7 @@ var resourcesDatabase = [
     'Brief Description': "The VARC at Virginia Commonwealth University's Autism Center for Excellence is a statewide resource center dedicated to improving the lives of individuals with autism spectrum disorders and their families. Through integrative research, outreach and collaborative initiatives, VARC promotes and facilitates best practices for those diagnosed within the autism spectrum.",
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'autism'
   },
   {
     'State': 'VA',
@@ -2797,7 +2797,7 @@ var resourcesDatabase = [
     'Brief Description': 'Disability Rights of West Virginia (DRWV) is the federally mandated protection and advocacy system for people with disabilities in West Virginia. DRWV is a private, nonprofit agency. Our services are confidential and free of charge.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'legal, advocacy'
   },
   {
     'State': 'WV',
@@ -2825,7 +2825,7 @@ var resourcesDatabase = [
     'Brief Description': 'The West Virginia Autism Training Center (WV ATC) was established in 1984 by the WV Legislature and housed at Marshall University. Services are available to families of West Virginians with autism spectrum disorders as well as their educators and others significant in their lives.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'autism'
   },
   {
     'State': 'WV',
@@ -2839,7 +2839,7 @@ var resourcesDatabase = [
     'Brief Description': 'Programs for children and youth who are deaf or hard of hearing. Information and referral, family support, educational services, interpreter services and telephonic communication device loan program.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'deafness'
   },
   {
     'State': 'WV',
@@ -2867,7 +2867,7 @@ var resourcesDatabase = [
     'Brief Description': 'Has an Autism Center: The Autism Center works to build the capacity of school districts and other education agencies to improve their instruction and support for individuals with autism.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'autism'
   },
   {
     'State': 'OH',
@@ -2881,7 +2881,7 @@ var resourcesDatabase = [
     'Brief Description': 'For the past 9 years, Ohio’s Interagency Work Group on Autism, has worked to coordinate Ohio’s efforts to ensure Ohioans with autism spectrum disorder have the necessary system of supports across their lifespan.This coordinated effort has resulted in the development of ASD Strategies in Action. Their hard work has provided help and hope for many Ohioans.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'autism'
   },
   {
     'State': 'OH',
@@ -2895,7 +2895,7 @@ var resourcesDatabase = [
     'Brief Description': "Autism Society of Ohio is an affiliate of the Autism Society of America, the nation's leading grass roots autism organization. The Autism Society exists to improve the lives of all affected by autism. We do this by increasing public awareness about the day-to-day issues faced by people with ASD, advocating for appropriate services across the life span, and providing the latest information regarding treatment, education, and advocacy.",
     'Additional Information': '',
     'Notes': 'multiple locations',
-    'Tags': ''
+    'Tags': 'autism'
   },
   {
     'State': 'OH',
@@ -2909,7 +2909,7 @@ var resourcesDatabase = [
     'Brief Description': 'The mission of the Statewide Services Department is to provide technical assistance, professional development, materials and resources to families and local school districts serving children who are visually impaired.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'blindness'
   },
   {
     'State': 'OH',
@@ -2923,7 +2923,7 @@ var resourcesDatabase = [
     'Brief Description': 'We have an exciting opportunity to build and expand the services and access for a broader range of learners through the new Outreach Center for Deafness and Blindness and the Assistive Technology & Accessible Educational Materials Center.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'deafness, blindness'
   },
   {
     'State': 'OH',
@@ -2937,7 +2937,7 @@ var resourcesDatabase = [
     'Brief Description': 'The project provides services in Ohio to individuals, birth through 21 years, with deafblindness, including collaborative technical assistance to families, educational personnel and services providers through training and information dissemination. The OCDBE is dedicated to offering innovative approaches to improving the education of children and youth with deafblindness.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'deafness, blindness'
   },
   {
     'State': 'OH',
@@ -2951,7 +2951,7 @@ var resourcesDatabase = [
     'Brief Description': "Provide comprehensive education for Ohio's Deaf and Hard-of-Hearing students which encourages independence and life long learning to promote social development and cultural awareness, Prepare students to attain their potential and become contributing members of their communities,\nCollaborate with schools and other educational programs serving Deaf and Hard-of-Hearing students and their families to meet the individual needs of each student",
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'deafness'
   },
   {
     'State': 'OH',
@@ -2965,7 +2965,7 @@ var resourcesDatabase = [
     'Brief Description': 'We’re a parent-driven, non-profit organization providing families with the resources, networks, and information they need to improve communication access and educational outcomes for their children. Our outreach activities, parent/professional collaboration, and advocacy efforts are focused on enabling Deaf and Hard-of-Hearing children to reach their highest potential.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'deafness'
   },
   {
     'State': 'OH',
@@ -2993,7 +2993,7 @@ var resourcesDatabase = [
     'Brief Description': "In October of 2012, Disability Rights Ohio replaced Ohio Legal Rights Service as Ohio's Protection and Advocacy (P&A) system and Client Assistance Program (CAP). It is governed by a Board of Directors, primarily consisting of people with disabilities and family members of people with disabilities.",
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'legal'
   },
   {
     'State': 'OH',
@@ -3007,7 +3007,7 @@ var resourcesDatabase = [
     'Brief Description': 'Founded in 1921 by Helen Newell Garfield, daughter-in-law of President James Garfield, who lost her hearing as a young woman, CHSC started with the simple mission of providing lip-reading classes for adults who are deaf or hard of hearing.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'deafness'
   },
   {
     'State': 'OH',
@@ -3021,7 +3021,7 @@ var resourcesDatabase = [
     'Brief Description': 'Empowering Epilepsy is a nonprofit 501(c)3 public charity organization dedicated to creating a proactive, seizure controlling/preventative respite center and community for people with epilepsy, their families and caregivers in Northeast Ohio. Our goal is to provide free or low cost programs, services and support that enable people with epilepsy to focus on their mind, body, and spirit and take charge of their lives.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'epilepsy'
   },
   {
     'State': 'OH',
@@ -3147,7 +3147,7 @@ var resourcesDatabase = [
     'Brief Description': 'This faith-based, nonprofit learning center services children on the Autism Spectrum in grades K-12. Most of the cost is paid with the Ohio Autism Scholarship Program, and the remaining cost is the responsibility of the student’s family. No student is turned away due to financial need.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'autism'
   },
   {
     'State': 'OH',
@@ -3259,7 +3259,7 @@ var resourcesDatabase = [
     'Brief Description': 'Our Council members are private citizens from across Tennessee who either have a disability or have a family member with a disability. Also, policymakers from state agencies that oversee Tennessee’s disability programs and experts from university centers in the area of developmental disabilities are members of the Council. We work together to find solutions to persistent problems, test innovative program models, and facilitate improvements to Tennessee’s disability service system.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'developmental disabilities'
   },
   {
     'State': 'TN',
@@ -3371,7 +3371,7 @@ var resourcesDatabase = [
     'Brief Description': 'Autism Tennessee exists to enrich the lives and experiences of individuals on the autism spectrum, their families, and their surrounding community through support, advocacy, and education.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'autism'
   },
   {
     'State': 'TN',
@@ -3427,7 +3427,7 @@ var resourcesDatabase = [
     'Brief Description': 'With appropriate education, vocational training and community living options and support systems, individuals with autism can lead dignified, productive lives in their communities and strive to reach their fullest potential.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'autism'
   },
   {
     'State': 'TN',
@@ -3441,7 +3441,7 @@ var resourcesDatabase = [
     'Brief Description': 'We serve the more than 207,000 individuals and families in these areas living with hearing loss, providing education, outreach, case management, interpreting services, and more--always striving for a vibrant community of equality, access, opportunity, and self realization, a community in which all are welcomed and valued.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'deafness'
   },
   {
     'State': 'TN',
@@ -3455,7 +3455,7 @@ var resourcesDatabase = [
     'Brief Description': 'a 501(c)3 not-for-profit organization and a parent/advocate-driven center providing lifespan support and services for people with autism spectrum disorders and for their families. The center also serves as an advocacy resource and builds awareness about autism in our region.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'autism'
   },
   {
     'State': 'TN',
@@ -3469,7 +3469,7 @@ var resourcesDatabase = [
     'Brief Description': 'Founded in 1972 by concerned families of children with developmental delays, the Community Development Center (CDC) has been guided through this focus to establish programs to support citizens within their communities.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'developmental disabilities'
   },
   {
     'State': 'TN',
@@ -3483,7 +3483,7 @@ var resourcesDatabase = [
     'Brief Description': 'We train educators on best-practice strategies for improving student outcomes. We help physicians, nurses, and other healthcare practitioners provide better care to their patients and better understand their needs and those of their families. We help businesses improve diversity in employment and understand how hiring individuals with Down syndrome can benefit their company.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'down syndrome'
   },
   {
     'State': 'TN',
@@ -3497,7 +3497,7 @@ var resourcesDatabase = [
     'Brief Description': 'DSAG works to educate and link individuals with Down syndrome, their families, and professionals by: Educating individuals and families about available resources and programs\nHosting conferences on information pertinent to Down syndrome\nOrganizing socials in order for individuals and families to network',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'down syndrome'
   },
   {
     'State': 'TN',
@@ -3511,7 +3511,7 @@ var resourcesDatabase = [
     'Brief Description': 'DSAM seeks to promote inclusion of all individuals with Down syndrome by providing families and our communities with up-to-date information and education, enhancing public awareness of the inherent worth, value, and contribution of these individuals to society and fostering positive attitudes regarding people with Down syndrome.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'down syndrome'
   },
   {
     'State': 'TN',
@@ -3525,7 +3525,7 @@ var resourcesDatabase = [
     'Brief Description': 'Knoxville Center for Autism, Inc. (KCA) was opened in March, 2010 to provide Applied Behavior Analysis (ABA) services to children diagnosed with Autism Spectrum Disorders. The center has since grown and added services, including Speech-Language Pathology (SLP), and Psychological/ Educational testing and diagnostic services.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'autism'
   },
   {
     'State': 'TN',
@@ -3539,7 +3539,7 @@ var resourcesDatabase = [
     'Brief Description': 'The Mid-Tennessee Council of the Blind (MTCB) is one of five 501c3 not-for-profit chapters across the state whose members are concerned about the dignity and well-being of blind people and vision impaired Middle Tennesseans. Our members include persons who are blind, losing vision, or are parents of a child who is blind or visually impaired or fully sighted. We welcome anyone who wishes to work toward equal rights and full participation in society for everyone with a disability',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'blindness'
   },
   {
     'State': 'KY',
@@ -3567,11 +3567,11 @@ var resourcesDatabase = [
     'Brief Description': 'BCA’s unparalleled approach to therapy focuses on developing the learning tools and skills that children and young adults need by the time they reach adulthood. BCA was established August of 2010 and has rapidly grown since that time. The demand for our unique curriculum has lead to the opening of two campuses. The Kosair Charities East Campus houses our children ages 3-11, and our older children and young adults ages 12-21, are developing life skills at our Mid City location.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'autism'
   },
   {
     'State': 'KY',
-    'Organization Name': 'Downsyndrome of Louisville',
+    'Organization Name': 'Down Syndrome of Louisville',
     'Website': 'https://downsyndromeoflouisville.org/',
     'Address': '5001 South Hurstbourne Parkway, Louisville, KY 40291',
     'Latitude': 38.174303,
@@ -3581,7 +3581,7 @@ var resourcesDatabase = [
     'Brief Description': 'Our mission is to improve the lives of people with Down syndrome, and their families, by providing support, information, education, and advocacy for their rights and concerns; thus enabling each individual to reach his or her full potential.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'down syndrome'
   },
   {
     'State': 'KY',
@@ -3595,7 +3595,7 @@ var resourcesDatabase = [
     'Brief Description': 'The Council helps families support loved ones -- providing training, information and one-on-one assistance to navigate the complexities surrounding special needs trusts, Medicaid waivers, guardianship and the education system.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'developmental disabilities'
   },
   {
     'State': 'KY',
@@ -3609,7 +3609,7 @@ var resourcesDatabase = [
     'Brief Description': 'THE MISSION OF THE EPILEPSY FOUNDATION OF KENTUCKIANA IS TO LEAD THE FIGHT TO OVERCOME THE CHALLENGES OF LIVING WITH EPILEPSY AND TO ACCELERATE THERAPIES TO STOP SEIZURES, FIND CURES, AND SAVE LIVES.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'epilepsy'
   },
   {
     'State': 'KY',
@@ -3665,7 +3665,7 @@ var resourcesDatabase = [
     'Brief Description': 'KCB supports change that touches all blind and visually impaired people, such as: Better education for children who are blind or visually impaired;\nMore accessible technology for all people with low vision;\nMedicare coverage for low vision devices;\nLarge print and talking prescription labels so people with low vision can manage their medications independently;',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'blindness'
   },
   {
     'State': 'KY',
@@ -3693,7 +3693,7 @@ var resourcesDatabase = [
     'Brief Description': 'KCDHH provides information, referral and advocacy services, and an interpreter referral service for state agencies.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'deafness'
   },
   {
     'State': 'CA',
@@ -3721,7 +3721,7 @@ var resourcesDatabase = [
     'Brief Description': 'Advocacy and support for individuals with developmental disabilities.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'developmental disabilities'
   },
   {
     'State': 'MI',
@@ -3749,7 +3749,7 @@ var resourcesDatabase = [
     'Brief Description': 'Empowers individuals with autism and their families by offering educational resources and materials.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'autism'
   },
   {
     'State': 'MI',
@@ -3781,7 +3781,7 @@ var resourcesDatabase = [
   },
   {
     'State': 'MI',
-    'Organization Name': 'DeathBlind Central',
+    'Organization Name': 'DeafBlind Central',
     'Website': 'https://www.cmich.edu/colleges/class/Centers/DBCentral/Pages/default.aspx',
     'Address': 'Central Michigan University, Mount Pleasant, MI, 48859',
     'Latitude': 43.581909,
@@ -3791,7 +3791,7 @@ var resourcesDatabase = [
     'Brief Description': 'Offers training to promote best practices for children and young adults who are Deaf-Blind.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'deafness, blindness'
   },
   {
     'State': 'MI',
@@ -3819,7 +3819,7 @@ var resourcesDatabase = [
     'Brief Description': 'Resources to empower independence and inspiring productive lives for all people with epilepsy.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'epilepsy'
   },
   {
     'State': 'MI',
@@ -3847,7 +3847,7 @@ var resourcesDatabase = [
     'Brief Description': 'Protect, preserve, and promote the health and safety of the people of Michigan.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'legal, advocacy'
   },
   {
     'State': 'MI',
@@ -3861,7 +3861,7 @@ var resourcesDatabase = [
     'Brief Description': 'Supporting families of children who are Deaf or Hard of Hearing.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'deafness'
   },
   {
     'State': 'MI',
@@ -3959,7 +3959,7 @@ var resourcesDatabase = [
     'Brief Description': 'The U.S. Department of Education’s Office for Civil Rights (OCR) is the federal agency charged with ensuring equal access to education for all students by enforcing federal statutes that prohibit discrimination in public education. Anyone who believes that a public educational institution has discriminated against someone on the basis of race, color, national origin, sex, disability, or age may file a complaint with the office. For information about how OCR investigates complaints, see http://www2.ed.gov/about/offices/list/ocr/complaints-how.html.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'legal, advocacy'
   },
   {
     'State': 'WA',
@@ -4071,7 +4071,7 @@ var resourcesDatabase = [
     'Brief Description': 'DRW is a member of the National Disability Rights Network.\nA substantial portion of the DRW budget is federally funded.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'legal, advocacy'
   },
   {
     'State': 'IN',
@@ -4169,7 +4169,7 @@ var resourcesDatabase = [
     'Brief Description': 'Enforces Indiana civil rights laws, prohibiting discrimination in employment, housing, education, public accommodation and credit. This includes Fair Housing and many ADA provisions.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'legal, advocacy'
   },
   {
     'State': 'IN',
@@ -4309,7 +4309,7 @@ var resourcesDatabase = [
     'Brief Description': 'The Disability Rights Center of Kansas (DRC), is a public interest legal advocacy agency empowered by federal law to advocate for the civil and legal rights of Kansans with disabilities. DRC is the Official Protection and Advocacy System for Kansas and is a part of the national network of federally mandated and funded protection and advocacy systems. As such, DRC advocates for the rights of Kansans with disabilities under state or federal laws (ADA, the Rehabilitation Act, Federal Medicaid Act, Kansas Act Against Discrimination, etc.)',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'legal, advocacy'
   },
   {
     'State': 'KS',
@@ -4365,7 +4365,7 @@ var resourcesDatabase = [
     'Brief Description': 'TEAAM is a non-profit organization dedicated to improving the lives of Mississippians with Autism Spectrum Disorders, Intellectual Disabilities, Developmental Disabilities, or Specific Learning Disabilities by cultivating and enhancing family and community supports.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'autism'
   },
   {
     'State': 'MS',
@@ -4379,7 +4379,7 @@ var resourcesDatabase = [
     'Brief Description': 'MIB is a leading employer of Mississippians who are blind. MIB offers employment opportunities at all levels of the organization, from direct labor manufacturing jobs to service jobs like document imaging to management staff positions.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'blindness'
   },
   {
     'State': 'MS',
@@ -4421,7 +4421,7 @@ var resourcesDatabase = [
     'Brief Description': 'The Mission of the Mississippi School for the Blind is to promote a strong foundation for learning and independence by providing specialized adapted services and materials to enhance maximum potential for students with visual impairments or blindness.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'blindness'
   },
   {
     'State': 'MS',
@@ -4494,40 +4494,40 @@ var resourcesDatabase = [
     'Tags': ''
   },
   {
-    'State': '',
+    'State': 'MO',
     'Organization Name': 'Legal Services of Missouri',
     'Website': 'http://www.lsmo.org/',
-    'Address': 'muliple',
-    'Latitude': '',
-    'Longitude': '',
+    'Address': '4232 Park Forest Avenue, St. Louis, MO  63108',
+    'Latitude': 38.636172,
+    'Longitude': -90.250866,
     'Phone Number': '314-534-4200',
     'Email': 'swlackey@gmail.com',
     'Brief Description': 'FREE legal advocacy services to any child that qualifies (under their specifications) and are not receiving the aid they need or are being excluded because of a special need. Legal services are also available to low-income citizens.',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'legal'
   },
   {
-    'State': '',
+    'State': 'MO',
     'Organization Name': 'Missouri Families for Effective Autism Treatment (MO-FEAT)',
-    'Website': 'http://mofeat.org/resource.htm',
-    'Address': '',
-    'Latitude': '',
-    'Longitude': '',
-    'Phone Number': '',
-    'Email': '',
+    'Website': 'https://www.mo-feat.org',
+    'Address': '15455 Manchester Road #3685, Ballwin, MO 63022',
+    'Latitude': 38.593441,
+    'Longitude': -90.565532,
+    'Phone Number': '636-527-3328',
+    'Email': 'info@mofeat.org',
     'Brief Description': 'State-wide connections to advocacy, support groups, therapists, doctors and more. Call 636-527-FEAT (3328) or 877-275-8988',
     'Additional Information': '',
     'Notes': '',
-    'Tags': ''
+    'Tags': 'autism'
   },
   {
-    'State': '',
+    'State': 'MO',
     'Organization Name': 'Missouri First Steps',
     'Website': 'https://www.mofirststeps.com',
     'Address': '',
-    'Latitude': '',
-    'Longitude': '',
+    'Latitude': 37.964253,
+    'Longitude': -91.831833,
     'Phone Number': '1-866-583-2392',
     'Email': '',
     'Brief Description': 'Missouri’s Early Intervention system for infants and toddlers, birth to age 3, who have delayed development or diagnosed conditions that are associated with developmental disabilities.',
@@ -4536,12 +4536,12 @@ var resourcesDatabase = [
     'Tags': ''
   },
   {
-    'State': '',
+    'State': 'MO',
     'Organization Name': 'Missouri Protection & Advocacy Services',
     'Website': 'http://www.moadvocacy.org/index.html',
-    'Address': '925 South Country Club Dr.\n            Jefferson City MO 65109',
-    'Latitude': '',
-    'Longitude': '',
+    'Address': '925 South Country Club Drive, Jefferson City MO 65109',
+    'Latitude': 38.572549,
+    'Longitude': -92.270445,
     'Phone Number': '573-893-3333 or 866-777-7199',
     'Email': 'app.unit@mo-pa.org',
     'Brief Description': 'Protect the rights of individuals with disabilities by providing advocacy and legal services',
@@ -4550,12 +4550,12 @@ var resourcesDatabase = [
     'Tags': ''
   },
   {
-    'State': '',
+    'State': 'MO',
     'Organization Name': "Children's Education Alliance of Missouri (CEAM)",
     'Website': 'ceamteam.org',
     'Address': '1310 Papin St. Suite 106 St. Louis, MO 63103',
-    'Latitude': '',
-    'Longitude': '',
+    'Latitude': 38.619973,
+    'Longitude': -90.20356,
     'Phone Number': '314-454-6544',
     'Email': '',
     'Brief Description': 'CEAM works to improve Missouri’s K-12 education system by advancing education policies that ensure all families have the right to choose the education they determine is best for their children.',
