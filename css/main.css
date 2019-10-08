@@ -176,6 +176,11 @@ a:hover
     color: #439bb1;
 }
 
+a
+{
+  color: #FFFFFF;
+}
+
 .white-grey-gradient-background
 {
     background: rgb(235,235,235);
