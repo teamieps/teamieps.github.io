@@ -21,7 +21,6 @@ jQuery('#categories-list').on('change', 'input', function (event) {
   } else {
     delete resourcesFilter.categories
   }
-
   const resources = prepareResources(resourcesFilter)
   displayResources(resources)
 })
