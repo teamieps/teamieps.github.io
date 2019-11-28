@@ -111,7 +111,7 @@ textarea
    ========================================================================== */
 
 /*
-Dark purple: #7462e0
+Dark purple: #5EB7B7
 Light Purple:
 
 Purple gradient: 8A8BE5 to BFBFFE
@@ -135,16 +135,16 @@ body
 
 /* Background and text  Colours */
 
-/* Potential new colour 7462e0 */
+/* Potential new colour 5EB7B7 */
 /* Old purple colour acadfe */
-/* Dark purple: 7462e0 */
+/* Dark blue: 5EB7B7 */
 /* Light purple 9587ec */
 
 
 .purple-background
 {
     color: white;
-    background-color: #7462e0;
+    background-color: #5EB7B7;
 }
 
 .main-background
@@ -162,13 +162,13 @@ body
 
 .white-background
 {
-    color: #7462e0;
+    color: #5EB7B7;
     background-color: white;
 }
 
 .white-background a
 {
-    color: #7462e0;
+    color: #5EB7B7;
 }
 
 a:hover
@@ -189,7 +189,7 @@ a
 
 .purple-text
 {
-    color: #7462e0;
+    color: #5EB7B7;
 }
 
 .shadow
@@ -282,7 +282,7 @@ header
     position: fixed;
     z-index: 10000;
 
-    border-bottom: 4px solid #7462e0;
+    border-bottom: 4px solid #5EB7B7;
 }
 
 #hero
@@ -320,6 +320,11 @@ header
 {
     width: 100px;
     height: 100px;
+}
+.SER-logo
+{
+  height: 100px;
+  padding: 10px;
 }
 
 .circular-image-background
@@ -441,7 +446,7 @@ header
 
     text-transform: uppercase;
 
-    border: 1.5px solid #7462e0;
+    border: 1.5px solid #5EB7B7;
     -webkit-border-top-right-radius: 40px;
     -moz-border-radius-topright: 40px;
             border-top-right-radius: 40px;
@@ -457,7 +462,7 @@ header
 
     text-transform: capitalize;
 
-    border-bottom: 3px solid #7462e0;
+    border-bottom: 3px solid #5EB7B7;
 }
 
 nav

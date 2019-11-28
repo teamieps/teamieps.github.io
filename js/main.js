@@ -124,7 +124,7 @@ let setUpUSAMap = function () {
 
   let stateColors = {}
   for (let stateCode of statesWithResources) {
-    stateColors[stateCode] = '#dcd6ff'
+    stateColors[stateCode] = '#5eb7b7'
   }
 
   jQuery('#usa-map').vectorMap({
