@@ -131,6 +131,7 @@ h5
 body
 {
     font-family: Geneva, 'Roboto', sans-serif;
+    background: #FFF5EF;
 }
 
 /* Background and text  Colours */
@@ -282,7 +283,7 @@ header
     position: fixed;
     z-index: 10000;
 
-    border-bottom: 4px solid #5EB7B7;
+    /* border-bottom: 4px solid #5EB7B7; */
 }
 
 #hero
@@ -291,7 +292,7 @@ header
 
     box-sizing: border-box;
     padding-top: 150px;
-    padding-bottom: 20px;
+    padding-bottom: 300px;
 }
 
 #hero h1
@@ -465,6 +466,19 @@ header
     border-bottom: 3px solid #5EB7B7;
 }
 
+.blue-shapes {
+  position: absolute;
+  width: 487px;
+  height: 304px;
+  top: 0px;
+  right: 0px;
+}
+
+.pink-shapes {
+  position: absolute;
+  top: 250px;
+}
+
 nav
 {
     display: flex;
@@ -582,7 +596,7 @@ hr
     height: 2px;
 
     border: 0;
-    background: rgba(172, 173, 254, .4);
+    background: rgb(150, 209, 199);
 }
 
 #stateSelectionDropdown
