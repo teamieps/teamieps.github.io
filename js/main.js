@@ -11,15 +11,15 @@ jQuery(document).ready(function () {
   populateResourceCategoriesList()
 })
 
-$(window).on('scroll', function () {
-if ($(this).scrollTop() > 200) { // Set position from top
-    $('.SER-logo').attr('src', './img/SERsmall.svg');
-    $('.SER-logo').css('height', '75px');
-}else{
-    $('.SER-logo').attr('src', './img/SERbig.svg');
-    $('.SER-logo').css('height', '100px');
-}
-});
+// $(window).on('scroll', function () {
+// if ($(this).scrollTop() > 200) { // Set position from top
+//     $('.SER-logo').attr('src', './img/SERsmall.svg');
+//     $('.SER-logo').css('height', '75px');
+// }else{
+//     $('.SER-logo').attr('src', './img/SERbig.svg');
+//     $('.SER-logo').css('height', '100px');
+// }
+// });
 
 // checked items are jQuery('#categories-list input:checked').toArray().map(item => $(item).attr('id'))
 

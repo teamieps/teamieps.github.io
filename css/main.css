@@ -124,13 +124,14 @@ h3,
 h4,
 h5
 {
-    font-family: Avenir, 'Nunito', sans-serif;
-    font-weight: bolder;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
 }
 
 body
 {
-    font-family: Geneva, 'Roboto', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
     background: #FFF5EF;
 }
 
