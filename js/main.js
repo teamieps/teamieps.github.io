@@ -134,7 +134,7 @@ let setUpUSAMap = function () {
 
   let stateColors = {}
   for (let stateCode of statesWithResources) {
-    stateColors[stateCode] = '#5eb7b7'
+    stateColors[stateCode] = '#96d1c7'
   }
 
   jQuery('#usa-map').vectorMap({
@@ -149,8 +149,8 @@ let setUpUSAMap = function () {
     enableZoom: false,
     // showLabels: true,
     showTooltip: true,
-    selectedColor: '#acadfe',
-    hoverColor: '#acadfe',
+    selectedColor: '#5eb7b7',
+    hoverColor: '#5eb7b7',
     onRegionClick: ignoreUnsupportedStates,
     onRegionSelect: function (event, code, region) {
       if (jQuery('#stateSelectionDropdown').val() !== code) {
@@ -196,7 +196,7 @@ jQuery('#stateSelectionDropdown').change(function (event) {
   }
 })
 
-const resourceItemHTML = '<div class="resource-item"><a target="_blank"><h3></h3></a><div class="tags"></div><p class="resource-description"></p><div><label class="resource-details-toggle-label purple-background">Show Details</label></div><input type="checkbox" class="resource-details-toggle"><div class="resource-details"></div></div>'
+const resourceItemHTML = '<div class="resource-item"><a target="_blank"><h3></h3></a><div class="tags"></div><p class="resource-description"></p><div><label class="resource-details-toggle-label blue-background">Show Details</label></div><input type="checkbox" class="resource-details-toggle"><div class="resource-details"></div></div>'
 
 jQuery('.find-resources-trigger').click(function () {
   const clickTarget = $(this)
@@ -316,7 +316,7 @@ const displayResources = function (resources) {
       const tags = resource['Tags'].split(',').map(rawTag => rawTag.trim())
       const tagContainer = resourceNode.find('.tags')
       for (let tag of tags) {
-        tagContainer.append(jQuery(`<span class="tag purple-background">${tag}</span>`))
+        tagContainer.append(jQuery(`<span class="tag blue-background">${tag}</span>`))
       }
     }
 
@@ -324,7 +324,7 @@ const displayResources = function (resources) {
   }
 
   if (userPosition) {
-    jQuery('#resources-display .button.find-resources-trigger').text('resources sorted by distance from you').removeClass('button purple-background')
+    jQuery('#resources-display .button.find-resources-trigger').text('resources sorted by distance from you').removeClass('button blue-background')
     jQuery('#resources-description').text('Near You')
   }
 

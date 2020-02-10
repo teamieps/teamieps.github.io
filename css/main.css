@@ -1,4 +1,4 @@
-/*! HTML5 Boilerplate v7.0.1 | MIT License | https://html5boilerplate.com/ */
+blue-background/*! HTML5 Boilerplate v7.0.1 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 1.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
@@ -110,14 +110,6 @@ textarea
    Author's custom styles
    ========================================================================== */
 
-/*
-Dark purple: #5EB7B7
-Light Purple:
-
-Purple gradient: 8A8BE5 to BFBFFE
-
-*/
-
 h1,
 h2,
 h3,
@@ -137,13 +129,8 @@ body
 
 /* Background and text  Colours */
 
-/* Potential new colour 5EB7B7 */
-/* Old purple colour acadfe */
-/* Dark blue: 5EB7B7 */
-/* Light purple 9587ec */
 
-
-.purple-background
+.blue-background
 {
     color: white;
     background-color: #5EB7B7;
@@ -189,7 +176,7 @@ a
     background: linear-gradient(0deg, rgba(235,235,235,1) 0%, rgba(255,255,255,1) 100%);
 }
 
-.purple-text
+.blue-text
 {
     color: #5EB7B7;
 }
@@ -371,11 +358,6 @@ header
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-}
-
-.triangle-after-purple::after
-{
-    background-image: url(./../img/triangle-purple.svg);
 }
 
 .triangle-after-left::after
