@@ -668,6 +668,10 @@ hr
     text-transform: capitalize;
 }
 
+#map-button {
+  display: inline-block;
+}
+
 
 
 
