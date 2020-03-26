@@ -450,16 +450,18 @@ header
 }
 
 .blue-shapes {
-  position: absolute;
+  position: fixed;
   width: 487px;
   height: 304px;
   top: 0px;
   right: 0px;
+  z-index: -10;
 }
 
 .pink-shapes {
-  position: absolute;
+  position: fixed;
   top: 250px;
+  z-index: -10;
 }
 
 nav
