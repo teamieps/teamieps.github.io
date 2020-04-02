@@ -312,8 +312,18 @@ header
 }
 .SER-logo
 {
-  height: 100px;
-  padding: 10px;
+  height: 8vh;
+  padding: 9px;
+}
+
+.map-fullscreen
+{
+  margin-top: 8vh;
+}
+#map
+{
+  width: 100%;
+  height: 92vh;
 }
 
 .circular-image-background

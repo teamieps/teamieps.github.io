@@ -1,0 +1,134 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Special Education Resources Across the US</title>
+  <meta name="description" content="Special Education Resources is a free, not-for-profit tool to connect families with experts, advocacy, support organizations, and other resources you need to help your child thrive.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#acadfe">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500&display=swap" rel="stylesheet">
+
+  <link rel="canonical" href="https://www.specialeducationresources.org/"/>
+  <meta property="og:title" content="Special Education Resources Across the US"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="A free, not-for-profit tool to connect families with experts, advocacy, support organizations, and other resources you need to help your child thrive."/>
+  <meta property="og:url" content="https://www.specialeducationresources.org/"/>
+  <meta property="og:image" content="https://www.specialeducationresources.org/img/specialeducationresources.png"/>
+
+  <link href="css/jqvmap.min.css" media="screen" rel="stylesheet" type="text/css"/>
+
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css' rel='stylesheet' />
+
+
+</head>
+
+<body>
+
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js"></script>
+  <link
+  rel="stylesheet"
+  href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css"
+  type="text/css"
+  />
+  <!--[if lte IE 9]> <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p> <![endif]-->
+
+  <img src="./img/blueShapes.svg" class="blue-shapes" alt="blue blobs">
+  <img src="./img/pinkShapes.svg" class="pink-shapes" alt="pink blobs">
+  <header class="full-width" style="background: #FFF5EF">
+    <nav class="width-wrapper">
+      <div>
+        <a href="/"><img src="./img/SERbig.svg" class="SER-logo" alt="SpecialEducationResources logo"></a>
+      </div>
+      <div>
+        <a href="#about" class="no-underline">
+          <h2 class="button blue-background hover-darken">
+            About
+          </h2>
+        </a>
+      </div>
+    </nav>
+  </header>
+<<div class="map-fullscreen">
+  <div id='map'></div>
+</div>
+
+  <footer class="full-width blue-background">
+    <div id="feet-info" style="display: flex;">
+      <div style="flex: 50%; margin: 20px;" id="about">
+        <h2 style="text-decoration: underline;">ABOUT US</h2>
+        <p>
+          SpecialEducationResources.org is a free and not-for-profit tool created by a group of students at Princeton University. This website is designed to help families connect with special education resources near them.
+        </p>
+        <p>
+          This tool was built by Demi Zhang, Eric Guerci, <a href="https://kylebarn.es">Kyle Barnes</a>, and
+          <a href="https://www.sebthedev.com">Sebastian Hallum Clarke</a>
+          through Princeton University's
+          <a href="https://tigerchallenge.princeton.edu">Tiger Challenge</a>
+          design thinking social innovation program. The team was advised by
+          <!-- <span style="display:none">Hal Friedlander and Matthew Korobkin of the <a href="http://www.publicconsultinggroup.com">Public Consulting Group</a> and</span> -->
+          Rafe Steinhauer and Rob Van Varick of the
+          <a href="https://kellercenter.princeton.edu">Keller Center</a>.
+        </p>
+      </div>
+      <div style="flex: 50%; margin: 20px;">
+        <h2 style="text-decoration: underline; text-transform: uppercase;">Don't see your organization?</h2>
+        <p>We'd love to include as many high-quality resources as possible. Please submit any additional resources through
+          <a href="https://forms.gle/AsbGDJdLxZ37Co1d8" target="_blank">this simple form</a>.</p>
+        </div>
+      </div>
+      <div style="text-align: center; margin-bottom: 0; padding-bottom: 0.5%;">
+        <button onclick="topFunction()" id="topBtn" class="button white-background hover-darken">
+          Back to Top
+        </button>
+        <p>© TeamIEPs
+          <script type="text/javascript">
+            document.write(new Date().getFullYear());
+          </script>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Below this line is javascript content. Don't put any visual elements below this line. -->
+
+    <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+      window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+      </script>
+      <script type="text/javascript" src="./js/vendor/jquery.vmap.min.js"></script>
+      <script type="text/javascript" src="./js/vendor/jquery.vmap.usa.js" charset="utf-8"></script>
+      <script src="js/plugins.js"></script>
+      <script src="js/resourcesDatabase.js"></script>
+      <script src="js/statesDatabase.js"></script>
+      <script src="js/map.js"></script>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-136948011-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-136948011-1');
+      </script>
+
+    </body>
+
+    </html>
