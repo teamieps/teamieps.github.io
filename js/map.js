@@ -33,3 +33,8 @@ map.addControl(
 );
 
 map.addControl(new mapboxgl.NavigationControl()); // plus minus top right corner
+
+map.on('load', function() {
+  // for each resource, call addSource and use the coordinates
+  GeoJSON.parse(data, {Point: ['Latitude', 'Longitude']});
+});
