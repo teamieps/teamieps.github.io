@@ -9,7 +9,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3BlY2lhbGVkdWNhdGlvbnJlc291cmNlcyIsImEiOiJja
 var map = new mapboxgl.Map({
   container: "map", // container id
   style: "mapbox://styles/mapbox/streets-v11", //color of the map -- dark-v10 or light-v9
-  center: [-74.65545, 40.341701], // starting position - Princeton, NJ :)
+  center: [-74.0060, 40.7128], // starting position - Princeton, NJ :)
   zoom: 12, // starting zoom -- higher is closer
 });
 
@@ -22,7 +22,6 @@ var geocoder = new MapboxGeocoder({
 map.addControl(geocoder, "top-right");
 
 // Add geolocate control to the map. -- this zooms in on the user's current location when pressed
-// Q: is it too confusing ? like the symbol doesn't exactly tell you what it does
 map.addControl(
   new mapboxgl.GeolocateControl({
     positionOptions: {
@@ -35,6 +34,21 @@ map.addControl(
 map.addControl(new mapboxgl.NavigationControl()); // plus minus top right corner
 
 map.on('load', function() {
-  // for each resource, call addSource and use the coordinates
-  GeoJSON.parse(data, {Point: ['Latitude', 'Longitude']});
+  // add a source for the resources
+  map.addSource('resources', {
+    type: 'geojson',
+    data: GeoJSON.parse(resourcesDatabase, {Point: ['Latitude', 'Longitude']})
+  });
+  map.addLayer({
+    'id': 'allResources',
+    'type': 'circle',
+    'source': 'resources',
+    'layout': {
+      'visibility': 'visible'
+    },
+    'paint': {
+      'circle-radius': 8,
+      'circle-color': 'rgba(55,148,179,1)'
+    }
+  });
 });
